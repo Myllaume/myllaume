@@ -1,0 +1,4 @@
+h1 {
+    @include typo($fontEntete, 32px, 0, 0);
+    color: $colorBlack;
+}

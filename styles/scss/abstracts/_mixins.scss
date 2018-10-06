@@ -1,0 +1,12 @@
+@mixin size($width, $height: $width) {
+    // height s'il ne reçoit pas de valeur est égal à width
+    width: $width;
+    height: $height;
+}
+
+@mixin typo($font, $size, $letter, $line) {
+    font-family: $font;
+    font-size: $size;
+    letter-spacing: $letter;
+    line-height: $line;
+}

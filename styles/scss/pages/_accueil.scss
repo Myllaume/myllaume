@@ -1,0 +1,19 @@
+.wrapper-accueil {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.header-accueil {
+
+    &__entete--titre {
+
+        span {
+            font-size: 20px;
+        }
+    }
+
+    &__burger-menu {
+        @include size(70px);
+        background-color: $colorBlack;
+    }
+}
