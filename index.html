@@ -16,29 +16,39 @@
 
         <header class="header-accueil">
 
-            <section class="header-accueil__entete">
+            <section class="header-accueil__entete" id="entete">
                 <h1 class="header-accueil__entete--titre">Guillaume <span>Brioudes</span></h1>
-                <div class="header-accueil__buger-menu">
-                    <div class="header-accueil__buger-menu--branche"></div>
-                    <div class="header-accueil__buger-menu--branche"></div>
-                    <div class="header-accueil__buger-menu--branche"></div>
+                <div class="header-accueil__burger-menu" id="bouton-nav">
+                    <div class="header-accueil__burger-menu--branche"></div>
+                    <div class="header-accueil__burger-menu--branche"></div>
+                    <div class="header-accueil__burger-menu--branche"></div>
                 </div>
             </section>
 
-            <nav class="nav-accueil">
-                <a href="#" class="nav-accueil--item nav-link">A propos</a>
-                <a href="#" class="nav-accueil--item nav-link">Blog</a>
-                <a href="#" class="nav-accueil--item nav-link">Projets</a>
-                <a href="#" class="nav-accueil--item nav-link">Parcours</a>
+            <nav class="nav-accueil" id="volet-nav">
+                <div>
+                    <div class="nav-accueil--stick stick"></div>
+                    <a href="#" class="nav-accueil--item nav-link">A propos</a>
+                    <a href="#" class="nav-accueil--item nav-link">Blog</a>
+                    <div class="nav-accueil--stick stick"></div>
+                    <a href="#" class="nav-accueil--item nav-link">Projets</a>
+                    <a href="#" class="nav-accueil--item nav-link">Parcours</a>
+                    <div class="nav-accueil--stick stick"></div>
+                </div>
                 <a href="#" class="nav-accueil--item nav-link nav-accueil--item---big">Contact</a>
             </nav>
 
             <section class="header-accueil__reseau">
-                <img src="./src/icons/icone_behance.svg" alt="Behance" class="header-accueil__reseau--icone social-icone" />
-                <img src="./src/icons/icone_github.svg" alt="GitHub" class="header-accueil__reseau--icone social-icone" />
-                <img src="./src/icons/icone_linkedin.svg" alt="LinkedIn" class="header-accueil__reseau--icone social-icone" />
-                <img src="./src/icons/icone_pinterest.svg" alt="Pinterest" class="header-accueil__reseau--icone social-icone" />
-                <div class="header-accueil__reseau--divider"></div>
+                <div class="stick-box">
+                    <div class="header-accueil__reseau--stick-vertical stick stick-vertical"></div>
+                    <div class="header-accueil__reseau--stick stick"></div>
+                    <div class="header-accueil__reseau__box">
+                        <img src="./src/icons/icone_behance.svg" alt="Behance" class="header-accueil__reseau--icone social-icone" />
+                        <img src="./src/icons/icone_github.svg" alt="GitHub" class="header-accueil__reseau--icone social-icone" />
+                        <img src="./src/icons/icone_linkedin.svg" alt="LinkedIn" class="header-accueil__reseau--icone social-icone" />
+                        <img src="./src/icons/icone_pinterest.svg" alt="Pinterest" class="header-accueil__reseau--icone social-icone" />
+                    </div>
+                </div>
             </section>
 
         </header>
@@ -56,13 +66,13 @@
 
                 <article class="main-accueil__domaines__content">
                     <h3>Développement web</h3>
-                    <p>Maquettage, intégration et ergonomie</p>
-                    <p>Développement HTML, CSS/SCSS et Java Script, PHP</p>
+                    <p><a href="#">Maquettage, intégration</a> et ergonomie</p>
+                    <p>Développement <a href="#">HTML, CSS/SCSS</a> et <a href="#">Java Script, PHP</a></p>
                 </article>
                 <article class="main-accueil__domaines__content">
                     <h3>Rédaction web</h3>
-                    <p>Référencement web et storytelling, sur papier ou CMS</p>
-                    <p>Rédaction de textes techniques ou sylisés</p>
+                    <p><a href="#">Référencement web</a> et storytelling, sur <a href="#">papier ou CMS</a></p>
+                    <p>Rédaction de textes <a href="#">techniques ou sylisés</a></p>
                 </article>
 
                 <a href="#" class="main-accueil__domaines--button">Découvrez mes compétences</a>
@@ -71,26 +81,30 @@
 
         </main>
 
-        <footer class="footer-accueil">
-
-            <div class="footer-accueil--button-retour-haut"></div>
-
-            <section class="footer-accueil__navigation">
-                <a href="#" class="footer-accueil__navigation--item nav-link">Me contacter</a>
-                <a href="#" class="footer-accueil__navigation--item nav-link">Mes projets</a>
-                <a href="#" class="footer-accueil__navigation--item nav-link">Mon parcours</a>
-                <a href="#" class="footer-accueil__navigation--item nav-link">Le blog</a>
-            </section>
-
-            <section class="footer-accueil__legal">
-                <a href="#">Plan du site</a>
-                <a href="#">Mentions légales</a>
-            </section>
-
-        </footer>
-
     </div>
 
+    <footer class="footer-accueil">
+
+        <div class="footer-accueil--button-retour-haut">
+            <img src="./src/icons/icone_fleche.svg" alt="" id="fleche-retour-top" class="footer-accueil--button-retour-haut--fleche">
+        </div>
+
+        <section class="footer-accueil__navigation">
+            <a href="#" class="footer-accueil__navigation--item nav-link">Me contacter</a>
+            <a href="#" class="footer-accueil__navigation--item nav-link">Mes projets</a>
+            <a href="#" class="footer-accueil__navigation--item nav-link">Mon parcours</a>
+            <a href="#" class="footer-accueil__navigation--item nav-link">Le blog</a>
+        </section>
+
+        <section class="footer-accueil__legal">
+            <a href="#" class="footer-accueil__legal--item">Plan du site</a>
+            <a href="#" class="footer-accueil__legal--item">Mentions légales</a>
+        </section>
+
+    </footer>
+
 </body>
+
+<script src="./script/navigation.js"></script>
 
 </html>

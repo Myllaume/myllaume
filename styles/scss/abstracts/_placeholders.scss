@@ -1,25 +1,50 @@
 // -- FONTS
 
-%merriweather_light {
+%merriweather-light {
     font-family: 'Merriweather';
     font-weight: 300;
     font-style: normal;
 }
 
-%merriweather_bold {
+%merriweather-bold {
     font-family: 'Merriweather';
     font-weight: bold;
     font-style: normal;
 }
 
-%merriweather_italic {
+%merriweather-italic {
     font-family: 'Merriweather';
     font-weight: normal;
     font-style: italic;
 }
 
-%merriweather_light_italic {
+%merriweather-light_italic {
     font-family: 'Merriweather';
     font-weight: 300;
     font-style: italic;
+}
+
+// -- POSITIONNEMENT
+
+%flex-center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// -- DECORATION
+
+%transition {
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+}
+
+%shadow {
+    box-shadow: 1px 1px 10px 0px black;
+    @extend %transition;
+
+    &:hover {
+        box-shadow: 1px 1px 20px 0px black;
+    }
 }

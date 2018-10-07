@@ -1,19 +1,198 @@
 .wrapper-accueil {
     width: 300px;
     margin: 0 auto;
+    padding: 10px;
+    background-color: $colorFond;
 }
 
 .header-accueil {
 
-    &__entete--titre {
+    &__entete {
+        @include flex(space-between, center);
 
-        span {
-            font-size: 20px;
+        &--titre {
+            @include size(220px, 50px);
+            display: block;
+            top: 15px;
+            position: relative;
+            text-align: left;
+            margin: 0;
+
+            span {
+                position: relative;
+                top: 27px;
+                display: block;
+                font-size: 22px;
+            }
         }
     }
 
     &__burger-menu {
-        @include size(70px);
+        @extend %flex-center-column;
+        @extend %shadow;
+        @extend %transition;
+        @include size(50px);
+        position: relative;
+        z-index: 100;
         background-color: $colorBlack;
+        border-radius: 50%;
+
+        &--branche {
+            @extend %transition;
+            @include size(30px, 3px);
+            background-color: $colorWhite;
+            margin: 4px 0;
+            border-radius: 2px;
+
+            &:nth-child(even) {
+                margin-right: 10px;
+            }
+
+            &---active {
+                background-color: $colorBlack;
+
+                &:nth-child(odd) {
+                    margin-right: 4px;
+                }
+
+                &:nth-child(even) {
+                    margin-left: 15px;
+                }
+            }
+        }
+
+        &---active {
+            background-color: $colorWhite;
+        }
+    }
+
+    &__reseau {
+        margin-top: 20px;
+
+        &--stick {
+            @include size(200px, 3px);
+            position: relative;
+            top: -10px;
+
+            &-vertical {
+                @include size(70px, 3px);
+                position: relative;
+                left: 130px;
+            }
+        }
+
+        &__box {
+            @include flex(space-around, center);
+            @include size(150px, 30px);
+            box-sizing: border-box;
+        }
+    }
+
+}
+
+.nav-accueil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 99;
+    top: 0px;
+    height: 0;
+    overflow: hidden;
+    background-color: $colorOrange;
+    @extend %transition;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 250px;
+    }
+
+    &--item {
+        font-family: $fontEntete;
+        text-transform: uppercase;
+        color: $colorBlack;
+        font-size: 22px;
+        margin: 5px 15px;
+    }
+
+    &--stick {
+        @include size(170px, 3px);
+
+        &-vertical {
+            @include size(50px, 3px);
+        }
+    }
+
+    &---active {
+        height: 300px;
+    }
+}
+
+.main-accueil {
+    margin-top: 50px;
+
+    &__domaines {
+
+        &__content p::before {
+            content: '-';
+        }
+
+        &--button {
+            @extend %merriweather-light;
+            @extend %shadow;
+            display: block;
+            background-color: $colorGray;
+            color: $colorWhite;
+            padding: 15px 10px;
+            margin: 30px 10px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 22px;
+            border-radius: 20px;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.footer-accueil {
+    @extend %flex-center-column;
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: $colorBlack;
+
+    &--button-retour-haut {
+        @include size(50px);
+        @extend %shadow;
+        background-color: $colorWhite;
+        border-radius: 50%;
+
+        &--fleche {
+            @include size(50px);
+        }
+    }
+
+    &__navigation {
+        @extend %flex-center-column;
+
+        &--item {
+            color: $colorWhite;
+            margin: 5px 0;
+            font-size: 20px;
+        }
+    }
+
+    &__legal {
+        @include flex(space-around, center);
+        margin-top: 20px;
+
+        &--item {
+            color: $colorWhite;
+            margin: 0 5px;
+        }
     }
 }

@@ -4,9 +4,9 @@
     height: $height;
 }
 
-@mixin typo($font, $size, $letter, $line) {
-    font-family: $font;
-    font-size: $size;
-    letter-spacing: $letter;
-    line-height: $line;
+@mixin flex($space, $align: $space) {
+
+    display: flex;
+    justify-content: $space;
+    align-items: $align;
 }

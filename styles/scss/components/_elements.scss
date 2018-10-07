@@ -1,0 +1,17 @@
+.stick {
+    background-color: $colorBlack;
+
+    &-vertical {
+        transform: rotate(90deg);
+    }
+
+    &-box {
+        position: relative;
+    }
+}
+
+%center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
