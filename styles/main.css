@@ -32,7 +32,7 @@ h2 {
           align-items: center;
 }
 
-.header-accueil__burger-menu, .main-accueil__domaines--button, .footer-accueil--button-retour-haut, .header-accueil__burger-menu--branche, .nav-accueil {
+.header-accueil__burger-menu, .main-accueil__domaines--button, .footer-accueil--button-retour-haut, .header-accueil__burger-menu--branche, .nav, .footer-accueil__navigation--item {
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
 }
@@ -141,11 +141,6 @@ a {
   font-style: normal;
 }
 
-.social-icone {
-  width: 30px;
-  height: 30px;
-}
-
 .stick {
   background-color: #1b1b1b;
 }
@@ -168,6 +163,10 @@ a {
   margin: 0 auto;
   padding: 10px;
   background-color: #d8d5d2;
+}
+
+.header-accueil {
+  position: relative;
 }
 
 .header-accueil__entete {
@@ -269,7 +268,12 @@ a {
           box-sizing: border-box;
 }
 
-.nav-accueil {
+.header-accueil__reseau--icone {
+  width: 30px;
+  height: 30px;
+}
+
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,13 +289,14 @@ a {
           align-items: center;
   position: absolute;
   z-index: 99;
-  top: 0px;
+  top: -10px;
+  left: -10px;
   height: 0;
   overflow: hidden;
   background-color: #ccb6a1;
 }
 
-.nav-accueil div {
+.nav div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,25 +313,25 @@ a {
   width: 250px;
 }
 
-.nav-accueil--item {
+.nav--item {
   font-family: "Kano";
   text-transform: uppercase;
   color: #1b1b1b;
   font-size: 22px;
-  margin: 5px 15px;
+  margin: 10px 15px;
 }
 
-.nav-accueil--stick {
+.nav--stick {
   width: 170px;
   height: 3px;
 }
 
-.nav-accueil--stick-vertical {
+.nav--stick-vertical {
   width: 50px;
   height: 3px;
 }
 
-.nav-accueil---active {
+.nav---active {
   height: 300px;
 }
 
@@ -364,6 +369,7 @@ a {
   height: 50px;
   background-color: whitesmoke;
   border-radius: 50%;
+  margin: 20px 0;
 }
 
 .footer-accueil--button-retour-haut--fleche {
@@ -371,10 +377,36 @@ a {
   height: 50px;
 }
 
+.footer-accueil--button-retour-haut:hover {
+  background-color: #ccb6a1;
+}
+
 .footer-accueil__navigation--item {
   color: whitesmoke;
-  margin: 5px 0;
+  margin: 10px 0;
   font-size: 20px;
+}
+
+.footer-accueil__navigation--item:hover {
+  color: #ccb6a1;
+}
+
+.footer-accueil__reseau-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+  width: 250px;
+}
+
+.footer-accueil__reseau-box--icone {
+  width: 50px;
+  height: 50px;
 }
 
 .footer-accueil__legal {

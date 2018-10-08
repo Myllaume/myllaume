@@ -11,26 +11,33 @@ window.addEventListener("load", function() {
     var voletNav = document.getElementById('volet-nav');
     console.dir(voletNav);
 
-    var enteteHeader = document.getElementById('entete');
-    console.dir(enteteHeader);
+    var enteteWrapper = document.getElementById('wrapper');
+    console.dir(enteteWrapper);
 
-    // recherche des information sur la largeur du header
-    var detailHeader = enteteHeader.getBoundingClientRect();
-    console.log(detailHeader);
-
-    var largeurHeader = detailHeader.width;
-    console.log(largeurHeader);
+    // recherche de la largeur du wrapper (et donc de la page)
+    var largeurWrapper = enteteWrapper.offsetWidth;
+    console.log(largeurWrapper);
 
     // largeur du header assignée à la navigation
-    voletNav.style.width = largeurHeader+'px';
+    voletNav.style.width = largeurWrapper+'px';
 
     boutonBurgerNav.addEventListener("click", function() {
-        voletNav.classList.toggle('nav-accueil---active');
+        voletNav.classList.toggle('nav---active');
         boutonBurgerNav.classList.toggle('header-accueil__burger-menu---active');
 
         for (var i = 0; i < barresBurger.length; i++) {
             var barreBurger = barresBurger[i];
             barreBurger.classList.toggle('header-accueil__burger-menu--branche---active');
         }
+    });
+
+    // bouton de retour en haut de page
+
+    // réception du bouton
+    var boutonRetourTop = document.getElementById('fleche-retour-top');
+    console.dir(boutonRetourTop);
+
+    boutonRetourTop.addEventListener("click", function() {
+        window.scrollTo(0, 0); 
     });
 });

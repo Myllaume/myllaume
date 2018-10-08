@@ -6,6 +6,7 @@
 }
 
 .header-accueil {
+    position: relative;
 
     &__entete {
         @include flex(space-between, center);
@@ -86,18 +87,23 @@
             @include size(150px, 30px);
             box-sizing: border-box;
         }
+
+        &--icone {
+            @include size(30px);
+        }
     }
 
 }
 
-.nav-accueil {
+.nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: absolute;
     z-index: 99;
-    top: 0px;
+    top: -10px; // égal au padding du wrapper
+    left: -10px; // égal au padding du wrapper
     height: 0;
     overflow: hidden;
     background-color: $colorOrange;
@@ -116,7 +122,7 @@
         text-transform: uppercase;
         color: $colorBlack;
         font-size: 22px;
-        margin: 5px 15px;
+        margin: 10px 15px;
     }
 
     &--stick {
@@ -170,9 +176,14 @@
         @extend %shadow;
         background-color: $colorWhite;
         border-radius: 50%;
+        margin: 20px 0;
 
         &--fleche {
             @include size(50px);
+        }
+
+        &:hover {
+            background-color: $colorOrange;
         }
     }
 
@@ -181,8 +192,23 @@
 
         &--item {
             color: $colorWhite;
-            margin: 5px 0;
+            margin: 10px 0;
             font-size: 20px;
+            @extend %transition;
+
+            &:hover {
+                color: $colorOrange;
+            }
+        }
+    }
+
+    &__reseau-box {
+        @include flex(space-around, center);
+        margin: 20px;
+        width: 250px;
+
+        &--icone {
+            @include size(50px);
         }
     }
 

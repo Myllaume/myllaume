@@ -12,11 +12,11 @@
 
 <body>
 
-    <div class="wrapper-accueil">
+    <div class="wrapper-accueil" id="wrapper">
 
         <header class="header-accueil">
 
-            <section class="header-accueil__entete" id="entete">
+            <section class="header-accueil__entete">
                 <h1 class="header-accueil__entete--titre">Guillaume <span>Brioudes</span></h1>
                 <div class="header-accueil__burger-menu" id="bouton-nav">
                     <div class="header-accueil__burger-menu--branche"></div>
@@ -25,17 +25,16 @@
                 </div>
             </section>
 
-            <nav class="nav-accueil" id="volet-nav">
+            <nav class="nav" id="volet-nav">
                 <div>
-                    <div class="nav-accueil--stick stick"></div>
-                    <a href="#" class="nav-accueil--item nav-link">A propos</a>
-                    <a href="#" class="nav-accueil--item nav-link">Blog</a>
-                    <div class="nav-accueil--stick stick"></div>
-                    <a href="#" class="nav-accueil--item nav-link">Projets</a>
-                    <a href="#" class="nav-accueil--item nav-link">Parcours</a>
-                    <div class="nav-accueil--stick stick"></div>
-                </div>
-                <a href="#" class="nav-accueil--item nav-link nav-accueil--item---big">Contact</a>
+                    <div class="nav--stick stick"></div>
+                    <a href="#" class="nav--item nav-link">A propos</a>
+                    <a href="#" class="nav--item nav-link">Blog</a>
+                    <div class="nav--stick stick"></div>
+                    <a href="#" class="nav--item nav-link">Projets</a>
+                    <a href="#" class="nav--item nav-link">Parcours</a>
+                    <div class="nav--stick stick"></div>
+                    <a href="#" class="nav--item nav-link nav--item---big">Contact</a>
             </nav>
 
             <section class="header-accueil__reseau">
@@ -43,10 +42,10 @@
                     <div class="header-accueil__reseau--stick-vertical stick stick-vertical"></div>
                     <div class="header-accueil__reseau--stick stick"></div>
                     <div class="header-accueil__reseau__box">
-                        <img src="./src/icons/icone_behance.svg" alt="Behance" class="header-accueil__reseau--icone social-icone" />
-                        <img src="./src/icons/icone_github.svg" alt="GitHub" class="header-accueil__reseau--icone social-icone" />
-                        <img src="./src/icons/icone_linkedin.svg" alt="LinkedIn" class="header-accueil__reseau--icone social-icone" />
-                        <img src="./src/icons/icone_pinterest.svg" alt="Pinterest" class="header-accueil__reseau--icone social-icone" />
+                        <a href="https://www.behance.net/brioudesgu6311" target="_blank"><img src="./src/icons/icone_behance.svg" alt="Behance" class="header-accueil__reseau--icone social-icone" /></a>
+                        <a href="http://github.com/Myllaume" target="_blank"><img src="./src/icons/icone_github.svg" alt="GitHub" class="header-accueil__reseau--icone social-icone" /></a>
+                        <a href="http://linkedin.com/in/guillaume-brioudes-a81225157/" target="_blank"><img src="./src/icons/icone_linkedin.svg" alt="LinkedIn" class="header-accueil__reseau--icone social-icone" /></a>
+                        <a href="http://pinterest.com/pinterest.fr/myllaume/" target="_blank"><img src="./src/icons/icone_pinterest.svg" alt="Pinterest" class="header-accueil__reseau--icone social-icone" /></a>
                     </div>
                 </div>
             </section>
@@ -85,8 +84,8 @@
 
     <footer class="footer-accueil">
 
-        <div class="footer-accueil--button-retour-haut">
-            <img src="./src/icons/icone_fleche.svg" alt="" id="fleche-retour-top" class="footer-accueil--button-retour-haut--fleche">
+        <div class="footer-accueil--button-retour-haut" id="fleche-retour-top">
+            <img src="./src/icons/icone_fleche.svg" alt="" class="footer-accueil--button-retour-haut--fleche">
         </div>
 
         <section class="footer-accueil__navigation">
@@ -94,6 +93,13 @@
             <a href="#" class="footer-accueil__navigation--item nav-link">Mes projets</a>
             <a href="#" class="footer-accueil__navigation--item nav-link">Mon parcours</a>
             <a href="#" class="footer-accueil__navigation--item nav-link">Le blog</a>
+
+            <div class="footer-accueil__reseau-box">
+                <a href="https://www.behance.net/brioudesgu6311" target="_blank"><img src="./src/icons/icone_behance.svg" alt="Behance" class="footer-accueil__reseau-box--icone social-icone" /></a>
+                <a href="http://github.com/Myllaume" target="_blank"><img src="./src/icons/icone_github.svg" alt="GitHub" class="footer-accueil__reseau-box--icone social-icone" /></a>
+                <a href="http://linkedin.com/in/guillaume-brioudes-a81225157/" target="_blank"><img src="./src/icons/icone_linkedin.svg" alt="LinkedIn" class="footer-accueil__reseau-box--icone social-icone" /></a>
+                <a href="http://pinterest.com/pinterest.fr/myllaume/" target="_blank"><img src="./src/icons/icone_pinterest.svg" alt="Pinterest" class="footer-accueil__reseau-box--icone social-icone" /></a>
+            </div>
         </section>
 
         <section class="footer-accueil__legal">
