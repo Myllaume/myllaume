@@ -5,7 +5,7 @@ window.addEventListener("load", function() {
     var boutonBurgerNav = document.getElementById('bouton-nav');
     console.dir(boutonBurgerNav);
 
-    var barresBurger = document.getElementsByClassName('header-accueil__burger-menu--branche');
+    var barresBurger = document.getElementsByClassName('header-accueil__nav--burger-menu--branche');
     console.dir(barresBurger);
 
     var voletNav = document.getElementById('volet-nav');
@@ -18,16 +18,13 @@ window.addEventListener("load", function() {
     var largeurWrapper = enteteWrapper.offsetWidth;
     console.log(largeurWrapper);
 
-    // largeur du header assignée à la navigation
-    voletNav.style.width = largeurWrapper+'px';
-
     boutonBurgerNav.addEventListener("click", function() {
-        voletNav.classList.toggle('nav---active');
-        boutonBurgerNav.classList.toggle('header-accueil__burger-menu---active');
+        voletNav.classList.toggle('header-accueil__nav__content---active');
+        boutonBurgerNav.classList.toggle('header-accueil__nav--burger-menu---active');
 
         for (var i = 0; i < barresBurger.length; i++) {
             var barreBurger = barresBurger[i];
-            barreBurger.classList.toggle('header-accueil__burger-menu--branche---active');
+            barreBurger.classList.toggle('header-accueil__nav--burger-menu--branche---active');
         }
     });
 

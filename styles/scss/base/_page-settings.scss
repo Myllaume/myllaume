@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col1 {
+    width: 100%;
+    min-width: 300px;
+}
+
+.col2 {
+    width: calc(100% / 2);
+    min-width: 300px;
+}
+
+.col3 {
+    width: calc(100% / 3);
+    min-width: 300px;
+}

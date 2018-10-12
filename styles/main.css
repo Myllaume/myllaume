@@ -16,7 +16,7 @@ h2 {
   font-style: italic;
 }
 
-.header-accueil__burger-menu, .footer-accueil, .footer-accueil__navigation {
+.header-accueil__nav--burger-menu, .footer-accueil, .footer-accueil__content__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,17 +32,17 @@ h2 {
           align-items: center;
 }
 
-.header-accueil__burger-menu, .main-accueil__domaines--button, .footer-accueil--button-retour-haut, .header-accueil__burger-menu--branche, .nav, .footer-accueil__navigation--item {
+.header-accueil__nav--burger-menu, .main-accueil__domaines--button, .footer-accueil--button-retour-haut, .header-accueil__nav__content, .header-accueil__nav--burger-menu--branche, .footer-accueil__content__nav--item {
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
 }
 
-.header-accueil__burger-menu, .main-accueil__domaines--button, .footer-accueil--button-retour-haut {
+.header-accueil__nav--burger-menu, .main-accueil__domaines--button, .footer-accueil--button-retour-haut {
   -webkit-box-shadow: 1px 1px 10px 0px black;
           box-shadow: 1px 1px 10px 0px black;
 }
 
-.header-accueil__burger-menu:hover, .main-accueil__domaines--button:hover, .footer-accueil--button-retour-haut:hover {
+.header-accueil__nav--burger-menu:hover, .main-accueil__domaines--button:hover, .footer-accueil--button-retour-haut:hover {
   -webkit-box-shadow: 1px 1px 20px 0px black;
           box-shadow: 1px 1px 20px 0px black;
 }
@@ -50,6 +50,29 @@ h2 {
 body {
   margin: 0;
   padding: 0;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.col1 {
+  width: 100%;
+  min-width: 300px;
+}
+
+.col2 {
+  width: calc(100% / 2);
+  min-width: 300px;
+}
+
+.col3 {
+  width: calc(100% / 3);
+  min-width: 300px;
 }
 
 h1 {
@@ -169,18 +192,6 @@ a {
   position: relative;
 }
 
-.header-accueil__entete {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .header-accueil__entete--titre {
   width: 220px;
   height: 50px;
@@ -188,7 +199,7 @@ a {
   top: 15px;
   position: relative;
   text-align: left;
-  margin: 0;
+  margin: 0 24px 0 0;
 }
 
 .header-accueil__entete--titre span {
@@ -198,62 +209,25 @@ a {
   font-size: 22px;
 }
 
-.header-accueil__burger-menu {
-  width: 50px;
-  height: 50px;
-  position: relative;
-  z-index: 100;
-  background-color: #1b1b1b;
-  border-radius: 50%;
-}
-
-.header-accueil__burger-menu--branche {
-  width: 30px;
-  height: 3px;
-  background-color: whitesmoke;
-  margin: 4px 0;
-  border-radius: 2px;
-}
-
-.header-accueil__burger-menu--branche:nth-child(even) {
-  margin-right: 10px;
-}
-
-.header-accueil__burger-menu--branche---active {
-  background-color: #1b1b1b;
-}
-
-.header-accueil__burger-menu--branche---active:nth-child(odd) {
-  margin-right: 4px;
-}
-
-.header-accueil__burger-menu--branche---active:nth-child(even) {
-  margin-left: 15px;
-}
-
-.header-accueil__burger-menu---active {
-  background-color: whitesmoke;
-}
-
-.header-accueil__reseau {
+.header-accueil__entete__reseau {
   margin-top: 20px;
 }
 
-.header-accueil__reseau--stick {
+.header-accueil__entete__reseau--stick {
   width: 200px;
   height: 3px;
   position: relative;
   top: -10px;
 }
 
-.header-accueil__reseau--stick-vertical {
+.header-accueil__entete__reseau--stick-vertical {
   width: 70px;
   height: 3px;
   position: relative;
   left: 130px;
 }
 
-.header-accueil__reseau__box {
+.header-accueil__entete__reseau__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,75 +242,108 @@ a {
           box-sizing: border-box;
 }
 
-.header-accueil__reseau--icone {
+.header-accueil__entete__reseau--icone {
   width: 30px;
   height: 30px;
 }
 
-.nav {
+.header-accueil__nav__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: fixed;
   z-index: 99;
-  top: -10px;
+  top: 0px;
   left: -10px;
   height: 0;
   overflow: hidden;
   background-color: #ccb6a1;
 }
 
-.nav div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  width: 250px;
-}
-
-.nav--item {
+.header-accueil__nav__content--item {
+  width: 100%;
+  text-align: center;
   font-family: "Kano";
   text-transform: uppercase;
   color: #1b1b1b;
-  font-size: 22px;
-  margin: 10px 15px;
+  font-size: 26px;
 }
 
-.nav--stick {
+.header-accueil__nav__content--stick {
   width: 170px;
   height: 3px;
 }
 
-.nav--stick-vertical {
+.header-accueil__nav__content--stick-vertical {
   width: 50px;
   height: 3px;
 }
 
-.nav---active {
-  height: 300px;
+.header-accueil__nav__content---active {
+  height: 100vh;
+}
+
+.header-accueil__nav__content---active a {
+  padding: 15px;
+}
+
+.header-accueil__nav--burger-menu {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+  background-color: #1b1b1b;
+  border-radius: 50%;
+}
+
+.header-accueil__nav--burger-menu--branche {
+  width: 30px;
+  height: 3px;
+  background-color: whitesmoke;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+.header-accueil__nav--burger-menu--branche:nth-child(even) {
+  margin-right: 10px;
+}
+
+.header-accueil__nav--burger-menu--branche---active {
+  background-color: #1b1b1b;
+}
+
+.header-accueil__nav--burger-menu--branche---active:nth-child(odd) {
+  margin-right: 4px;
+}
+
+.header-accueil__nav--burger-menu--branche---active:nth-child(even) {
+  margin-left: 15px;
+}
+
+.header-accueil__nav--burger-menu---active {
+  background-color: whitesmoke;
 }
 
 .main-accueil {
   margin-top: 50px;
+}
+
+.main-accueil__domaines--lettre-fond {
+  position: absolute;
+  top: 35%;
+  z-index: 1;
+  color: #c2c2c2;
+  font-family: "Libre Caslon Text";
+  font-size: 250px;
+}
+
+.main-accueil__domaines__content {
+  position: relative;
+  z-index: 2;
 }
 
 .main-accueil__domaines__content p::before {
@@ -348,9 +355,8 @@ a {
   background-color: #454545;
   color: whitesmoke;
   padding: 15px 10px;
-  margin: 30px 10px;
+  margin: 30px 0;
   text-align: center;
-  text-decoration: none;
   font-size: 22px;
   border-radius: 20px;
   -webkit-box-sizing: border-box;
@@ -381,17 +387,24 @@ a {
   background-color: #ccb6a1;
 }
 
-.footer-accueil__navigation--item {
+.footer-accueil__content div {
+  margin: 20px 0;
+}
+
+.footer-accueil__content__nav--item {
+  display: block;
+  width: 300px;
+  text-align: center;
   color: whitesmoke;
   margin: 10px 0;
   font-size: 20px;
 }
 
-.footer-accueil__navigation--item:hover {
+.footer-accueil__content__nav--item:hover {
   color: #ccb6a1;
 }
 
-.footer-accueil__reseau-box {
+.footer-accueil__content__reseau-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,29 +413,17 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px;
   width: 250px;
 }
 
-.footer-accueil__reseau-box--icone {
+.footer-accueil__content__reseau-box--icone {
   width: 50px;
   height: 50px;
 }
 
-.footer-accueil__legal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 20px;
-}
-
-.footer-accueil__legal--item {
+.footer-accueil__content__legal--item {
   color: whitesmoke;
   margin: 0 5px;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
