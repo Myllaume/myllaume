@@ -4,9 +4,6 @@
     height: $height;
 }
 
-@mixin flex($space, $align: $space) {
+@mixin border($borderPos) {
 
-    display: flex;
-    justify-content: $space;
-    align-items: $align;
 }

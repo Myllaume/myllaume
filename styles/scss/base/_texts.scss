@@ -1,41 +1,8 @@
-h1 {
-    font-family: $fontEntete;
-    font-size: 36px;
-    letter-spacing: 0.25em;
-    line-height: 0;
-    color: $colorBlack;
-}
-
-h2 {
-    @extend %merriweather-light_italic;
-    font-size: 32px;
-    letter-spacing: 0.25;
-    line-height: 0;
-    color: $colorBlack;
-}
-
-h3 {
-    @extend %merriweather-bold;
-    margin : 50px 0 20px 0;
-    font-size: 22px;
-    letter-spacing: 0.1em;
-    line-height: 0;
-    color: $colorBlack;
-}
-
-p {
-    font-family: $fontCorps;
-    font-size: 17px;
-    letter-spacing: 0.1em;
-    line-height: 1.3em;
-    color: $colorBlack;
-
-    a {
-        color: inherit;
-    }
-}
-
+h1,
+h2,
+h3,
+p,
 a {
-    font-family: $fontCorps;
-    letter-spacing: 0.1em;
+    @extend %merryweather-light;
+    margin: 0;
 }

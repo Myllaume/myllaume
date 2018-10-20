@@ -1,50 +1,28 @@
-// -- FONTS
+// -- polices
 
-%merriweather-light {
+%merryweather-light {
     font-family: 'Merriweather';
     font-weight: 300;
     font-style: normal;
 }
 
-%merriweather-bold {
-    font-family: 'Merriweather';
-    font-weight: bold;
-    font-style: normal;
-}
-
-%merriweather-italic {
-    font-family: 'Merriweather';
-    font-weight: normal;
-    font-style: italic;
-}
-
-%merriweather-light_italic {
+%merryweather-light-italic {
     font-family: 'Merriweather';
     font-weight: 300;
     font-style: italic;
 }
 
-// -- POSITIONNEMENT
+// -- Elements
 
-%flex-center-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+%link-nav {
+    text-decoration: none;
+    color: $colorBlack;
 }
 
-// -- DECORATION
-
-%transition {
-    -webkit-transition: all 0.7s;
-    transition: all 0.7s;
+%border {
+    border: $sizeTrait $colorBlack solid;
 }
 
-%shadow {
-    box-shadow: 1px 1px 10px 0px black;
-    @extend %transition;
-
-    &:hover {
-        box-shadow: 1px 1px 20px 0px black;
-    }
+%sepia {
+    filter: sepia(1);
 }

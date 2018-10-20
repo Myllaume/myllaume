@@ -1,0 +1,117 @@
+%marge {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.header {
+    border-right: $sizeTrait $colorBlack solid;
+
+    &__raccourcis-nav {
+        @extend .row;
+
+        &__menu-burger {
+            @include size(90px);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &--barre {
+                @extend %marge;
+                background-color: $colorBlack;
+                height: $sizeTrait;
+                margin: 7px;
+
+                &---min {
+                    width: 25px;
+                }
+
+                &---max {
+                    width: 42px;
+                }
+
+                &---moy {
+                    width: 35px;
+                }
+            }
+        }
+
+        &__loupe {
+            @include size(100px);
+            position: relative;
+            top: 10px;
+            border-bottom: $sizeTrait $colorBlack solid;
+
+            &--cercle {
+                @include size(30px);
+                @extend %border;
+                @extend %marge;
+                border-radius: 50%;
+            }
+
+            &--manche {
+                @include size(20px, $sizeTrait);
+                position: relative;
+                left: 42px;
+                top: 20px;
+                background-color: $colorBlack;
+                transform: rotate(45deg);
+            }
+        }
+
+        &__fleche-suivant {
+            @include size(100px);
+            border-top: $sizeTrait $colorBlack solid;
+
+            &--barre {
+                @include size(30px, $sizeTrait);
+                position: relative;
+                background-color: $colorBlack;
+                transform: rotate(45deg);
+                left: 40px;
+                top: 30px;
+
+                &---reverse {
+                    @include size(30px, $sizeTrait);
+                    position: relative;
+                    background-color: $colorBlack;
+                    transform: rotate(130deg);
+                    left: 20px;
+                    top: 30px;
+                }
+
+                &---longue {
+                    @include size(50px, $sizeTrait);
+                    position: relative;
+                    background-color: $colorBlack;
+                    transform: rotate(90deg);
+                    top: 40px;
+                    left: 20px;
+                }
+            }
+        }
+    }
+
+    &__nav-roulante {
+        overflow: auto;
+        width: 90px;
+        height: 400px;
+        -ms-overflow-style: none;
+        overflow: -moz-srollbars-none;
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+
+        &--item {
+            @extend %link-nav;
+            @extend %marge;
+            display: block;
+            transform: rotate(270deg);
+            // writing-mode: sideways-lr;
+            margin: 70px 10px;
+            font-size: 18px;
+        }
+    }
+}

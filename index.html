@@ -5,126 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Présentation de Guillaume Brioudes</title>
+    <title>Site web de Guillaume Brioudes</title>
 
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 
 <body>
 
-    <div class="wrapper-accueil" id="wrapper">
+    <div class="wrapper" id="wrapper">
 
-        <header class="header-accueil row">
+        <header class="header row">
 
-            <section class="header-accueil__entete col2">
-                <h1 class="header-accueil__entete--titre">Guillaume <span>Brioudes</span></h1>
-
-                <div class="header-accueil__entete__reseau">
-                    <div class="stick-box">
-                        <div class="header-accueil__entete__reseau--stick-vertical stick stick-vertical"></div>
-                        <div class="header-accueil__entete__reseau--stick stick"></div>
-                        <div class="header-accueil__entete__reseau__box">
-                            <a href="https://www.behance.net/brioudesgu6311" target="_blank"><img src="./src/icons/icone_behance.svg"
-                                    alt="Behance" class="header-accueil__entete__reseau--icone social-icone" /></a>
-                            <a href="http://github.com/Myllaume" target="_blank"><img src="./src/icons/icone_github.svg"
-                                    alt="GitHub" class="header-accueil__entete__reseau--icone social-icone" /></a>
-                            <a href="http://linkedin.com/in/guillaume-brioudes-a81225157/" target="_blank"><img src="./src/icons/icone_linkedin.svg"
-                                    alt="LinkedIn" class="header-accueil__entete__reseau--icone social-icone" /></a>
-                            <a href="http://pinterest.com/pinterest.fr/myllaume/" target="_blank"><img src="./src/icons/icone_pinterest.svg"
-                                    alt="Pinterest" class="header-accueil__entete__reseau--icone social-icone" /></a>
-                        </div>
-                    </div>
+            <section class="header__raccourcis-nav header__raccourcis-nav-top">
+                <div class="header__raccourcis-nav__menu-burger">
+                    <div class="header__raccourcis-nav__menu-burger--barre header__raccourcis-nav__menu-burger--barre---min"></div>
+                    <div class="header__raccourcis-nav__menu-burger--barre header__raccourcis-nav__menu-burger--barre---max"></div>
+                    <div class="header__raccourcis-nav__menu-burger--barre header__raccourcis-nav__menu-burger--barre---moy"></div>
+                </div>
+                <div class="header__raccourcis-nav__loupe">
+                    <div class="header__raccourcis-nav__loupe--cercle"></div>
+                    <div class="header__raccourcis-nav__loupe--manche"></div>
                 </div>
             </section>
-
-            <section class="header-accueil__nav col2">
-                <nav class="header-accueil__nav__content" id="volet-nav">
-                    <a href="#" class="header-accueil__nav__content--item nav-link">A propos</a>
-                    <a href="#" class="header-accueil__nav__content--item nav-link">Blog</a>
-                    <a href="#" class="header-accueil__nav__content--item nav-link">Projets</a>
-                    <a href="#" class="header-accueil__nav__content--item nav-link">Parcours</a>
-                    <a href="#" class="header-accueil__nav__content--item nav-link nav--item---big">Contact</a>
-                </nav>
-                <div class="header-accueil__nav--burger-menu" id="bouton-nav">
-                    <div class="header-accueil__nav--burger-menu--branche"></div>
-                    <div class="header-accueil__nav--burger-menu--branche"></div>
-                    <div class="header-accueil__nav--burger-menu--branche"></div>
+            <nav class="header__nav-roulante">
+                <a href="#" class="header__nav-roulante--item">Accueil</a>
+                <a href="#" class="header__nav-roulante--item">Contact</a>
+                <a href="#" class="header__nav-roulante--item">Parcours</a>
+                <a href="#" class="header__nav-roulante--item">Projets</a>
+            </nav>
+            <section class="header__raccourcis-nav header__raccourcis-nav-bottom">
+                <div class="header__raccourcis-nav__fleche-suivant">
+                    <div class="header__raccourcis-nav__fleche-suivant--barre"></div>
+                    <div class="header__raccourcis-nav__fleche-suivant--barre---reverse"></div>
+                    <div class="header__raccourcis-nav__fleche-suivant--barre---longue"></div>
                 </div>
             </section>
 
         </header>
 
-        <main class="main-accueil">
+        <main class="main row">
 
-            <section class="main-accueil__introduction row">
-                <h2>Qui suis-je ?</h2>
-                <p>Étudiant en communication et développeur web, je trouve autant de plaisir dans le style d’un texte
-                    que
-                    dans le style d’un texte que dans la syntaxe d’un bon code.</p>
-            </section>
+            <section class="main__page col-page">
+                <h1>Guillaume Brioudes</h1>
 
-            <section class="main-accueil__domaines row">
-
-                <p class="main-accueil__domaines--lettre-fond">&</p>
-
-                <article class="main-accueil__domaines__content col2">
-                    <h3>Développement web</h3>
-                    <p><a href="#">Maquettage, intégration</a> et ergonomie</p>
-                    <p>Développement <a href="#">HTML, CSS/SCSS</a> et <a href="#">Java Script, PHP</a></p>
-                </article>
-                <article class="main-accueil__domaines__content col2">
-                    <h3>Rédaction web</h3>
-                    <p><a href="#">Référencement web</a> et storytelling, sur <a href="#">papier ou CMS</a></p>
-                    <p>Rédaction de textes <a href="#">techniques ou sylisés</a></p>
+                <article class="main__page__presentation">
+                    <div class="photo-profile"></div>
+                    <p>Passionné par le web et la rédaction j’ai trouvé mon bonheur dans le style du blogging et la
+                        syntaxe du code. Je suis étudiant en programmation et web design.</p>
                 </article>
 
-                <a href="#" class="main-accueil__domaines--button nav-link col1">Découvrez mes compétences</a>
+                <article class="main__page__competences">
+                    <h2>Développement web</h2>
+                    <p>&</p>
+                    <h2>Rédaction web</h2>
 
+                    <a href="#" class="main__page__competences--btn">Voir les commpétences</a>
+                </article>
             </section>
+
+            <div class="main--separation"></div>
+
+            <section class="main__page col-page">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, voluptas pariatur sint error
+                    omnis expedita repellendus dolorem modi nobis obcaecati dolor iusto illum exercitationem suscipit
+                    deserunt sed quam, dolorum nemo voluptate magnam fugit consequatur ea. Tempore dolore, eveniet non
+                    doloremque asperiores qui dolorum tenetur impedit rerum iste delectus soluta quidem suscipit quas
+                    cupiditate nulla officiis voluptatibus nihil libero porro, repudiandae amet? Esse facilis nostrum
+                    sequi ducimus aspernatur soluta, veniam consequatur debitis voluptatibus quia quod dignissimos
+                    vitae consectetur laudantium rerum natus ad autem hic vero suscipit! Natus facilis esse accusantium
+                    perspiciatis quas nam cumque obcaecati adipisci aspernatur repellat, assumenda illo nulla!</p>
+            </section>
+
+            <section class="main__n-page"><p>1</p></section>
 
         </main>
 
     </div>
 
-    <footer class="footer-accueil row">
-
-        <div class="footer-accueil--button-retour-haut" id="fleche-retour-top">
-            <img src="./src/icons/icone_fleche.svg" alt="" class="footer-accueil--button-retour-haut--fleche">
-        </div>
-
-        <section class="footer-accueil__content">
-            <div class="footer-accueil__content_nav">
-                <a href="#" class="footer-accueil__content__nav--item nav-link">Me contacter</a>
-                <a href="#" class="footer-accueil__content__nav--item nav-link">Mes projets</a>
-                <a href="#" class="footer-accueil__content__nav--item nav-link">Mon parcours</a>
-                <a href="#" class="footer-accueil__content__nav--item nav-link">Le blog</a>
-            </div>
-
-            <div class="footer-accueil__content__reseau-box col3">
-                <a href="https://www.behance.net/brioudesgu6311" target="_blank">
-                    <img src="./src/icons/icone_behance.svg" alt="Behance" class="footer-accueil__content__reseau-box--icone social-icone" />
-                </a>
-                <a href="http://github.com/Myllaume" target="_blank">
-                    <img src="./src/icons/icone_github.svg" alt="GitHub" class="footer-accueil__content__reseau-box--icone social-icone" />
-                </a>
-                <a href="http://linkedin.com/in/guillaume-brioudes-a81225157/" target="_blank">
-                    <img src="./src/icons/icone_linkedin.svg" alt="LinkedIn" class="footer-accueil__content__reseau-box--icone social-icone" />
-                </a>
-                <a href="http://pinterest.com/pinterest.fr/myllaume/" target="_blank">
-                    <img src="./src/icons/icone_pinterest.svg" alt="Pinterest" class="footer-accueil__content__reseau-box--icone social-icone" />
-                </a>
-            </div>
-
-            <div class="footer-accueil__content__legal col3">
-                <a href="#" class="footer-accueil__content__legal--item">Plan du site</a>
-                <a href="#" class="footer-accueil__content__legal--item">Mentions légales</a>
-            </div>
-        </section>
-
-    </footer>
-
 </body>
-
-<script src="./script/navigation.js"></script>
 
 </html>

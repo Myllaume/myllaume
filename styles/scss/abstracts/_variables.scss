@@ -1,14 +1,12 @@
-// -- FONTS
-
-$fontDecoration: 'Libre Caslon Text';
-$fontEntete: 'Kano';
-$fontCorps: 'Merriweather'; // les déclinaisons de la polices sont dispos en 'placeholders.scss'
-
 // -- COLORS
 
-$colorFond: rgb(216, 213, 210);
+$colorFond: rgb(210, 206, 193);
 $colorOrange: rgb(204, 182, 161);
 
 $colorBlack: rgb(27, 27, 27);
 $colorWhite: rgb(245, 245, 245);
 $colorGray: rgb(69, 69, 69);
+
+// -- ELEMENTS
+
+$sizeTrait: 2px;
