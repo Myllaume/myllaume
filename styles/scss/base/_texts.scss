@@ -6,3 +6,46 @@ a {
     @extend %merryweather-light;
     margin: 0;
 }
+
+// -- TITRES
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    letter-spacing: 0.05em;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    letter-spacing: 0.01em;
+}
+
+p {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+}
+
+// -- SPANS
+
+.text-big {
+    font-size: 22px;
+}
+
+// code
+
+.code {
+
+    &-rouge {
+        color: rgba(252, 0, 0, 0.555);
+    }
+
+    &-bleu {
+        color: rgba(35, 35, 201, 0.555);
+    }
+
+    &-violet {
+        color: rgba(128, 0, 128, 0.555);
+    }
+}

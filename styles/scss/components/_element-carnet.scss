@@ -1,0 +1,43 @@
+.ligne-text {
+    @include size(100%, 1px);
+    margin: 3px 0 10px 0;
+    background-color: $colorGrayBright;
+}
+
+// Tabs
+
+section[data-tab="tableau"] {
+    @include border('all');
+    position: relative;
+    margin-top: 30px;
+    padding: 10px;
+    height: 80%;
+}
+
+div[data-tab="chaine"] {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: -30px;
+    width: 100%;
+}
+
+div[data-tab-etiquette] {
+    @include border('all');
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    background-color: $colorFond;
+}
+
+.tab-content {
+    @include size(100%);
+    position: relative;
+    display: none;
+    top: 0px;
+    background-color: $colorFond;
+}
+
+.tab-visible {
+    display: block;
+}

@@ -17,12 +17,13 @@
 %link-nav {
     text-decoration: none;
     color: $colorBlack;
-}
-
-%border {
-    border: $sizeTrait $colorBlack solid;
+    letter-spacing: 0.08em;
 }
 
 %sepia {
-    filter: sepia(1);
+    filter: sepia(0.4);
+}
+
+%transition {
+    transition: all 1.2s;
 }

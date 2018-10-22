@@ -17,7 +17,7 @@
         <header class="header row">
 
             <section class="header__raccourcis-nav header__raccourcis-nav-top">
-                <div class="header__raccourcis-nav__menu-burger">
+                <div class="header__raccourcis-nav__menu-burger" id="menu-burger">
                     <div class="header__raccourcis-nav__menu-burger--barre header__raccourcis-nav__menu-burger--barre---min"></div>
                     <div class="header__raccourcis-nav__menu-burger--barre header__raccourcis-nav__menu-burger--barre---max"></div>
                     <div class="header__raccourcis-nav__menu-burger--barre header__raccourcis-nav__menu-burger--barre---moy"></div>
@@ -43,44 +43,118 @@
 
         </header>
 
+        <section class="volet" id="volet">
+            <article class="volet__content row" id="volet-content">
+                <nav class="volet__content__nav">
+                    <a href="#" class="volet__content__nav--item">Accueil</a>
+                    <a href="#" class="volet__content__nav--item">Contact</a>
+                    <a href="#" class="volet__content__nav--item">Parcours</a>
+                    <a href="#" class="volet__content__nav--item">Projets</a>
+                </nav>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas voluptates voluptatem, ad omnis
+                    adipisci quisquam harum quasi necessitatibus tempore velit ex repellat vel quo impedit veniam
+                    commodi voluptas nisi delectus consectetur, exercitationem, blanditiis quaerat. Eum, illo numquam
+                    in cupiditate eligendi ut fugiat, aliquam distinctio recusandae sunt sed tempore veniam?
+                    Repellendus, quos hic! Accusamus autem, dolorum enim fugiat nemo modi quaerat sapiente iure
+                    voluptatibus deleniti. Voluptatem blanditiis necessitatibus perferendis voluptate nobis dolorum
+                    magni veritatis doloribus reiciendis voluptas porro quis, at, nesciunt quisquam fuga, officia
+                    dignissimos! Natus pariatur perspiciatis harum ipsa, quibusdam nostrum! Optio dicta cupiditate
+                    aspernatur quae dolores fuga in voluptates?</p>
+            </article>
+        </section>
+
         <main class="main row">
 
             <section class="main__page col-page">
-                <h1>Guillaume Brioudes</h1>
+                <h1 class="main__page--titre-page">Guillaume Brioudes</h1>
 
                 <article class="main__page__presentation">
-                    <div class="photo-profile"></div>
-                    <p>Passionné par le web et la rédaction j’ai trouvé mon bonheur dans le style du blogging et la
+                    <img src="./src/images/photo-guillaume-brioudes.jpg" alt="" class="main__page__presentation--photo-profil">
+                    <p class="main__page__presentation--texte">Passionné par le web et la rédaction j’ai trouvé mon
+                        bonheur dans le style du blogging et la
                         syntaxe du code. Je suis étudiant en programmation et web design.</p>
                 </article>
 
                 <article class="main__page__competences">
-                    <h2>Développement web</h2>
-                    <p>&</p>
-                    <h2>Rédaction web</h2>
+                    <div class="main__page__competences__domaine">
+                        <p class="main__page__competences__domaine--titres">Développement web</p>
+                        <p class="main__page__competences__domaine--description">Maquettage, intégration et ergonomie</p>
+                        <p class="main__page__competences__domaine--description">Développement HTML, CSS/SCSS et
+                            JavaScript, PHP</p>
+                    </div>
+                    <div class="main__page__competences__esperluette">
+                        <p><span class="text-big">&</span></p>
+                    </div>
+                    <div class="main__page__competences__domaine">
+                        <p class="main__page__competences__domaine--titres">Rédaction web</p>
+                        <p class="main__page__competences__domaine--description">Référencement web et storytelling, sur
+                            papier ou CMS</p>
+                        <p class="main__page__competences__domaine--description">Rédaction de textes techniques oui
+                            stylisés</p>
+                    </div>
+                    <a href="#" class="main__page__competences--bouton bouton">Voir mes compétences</a>
+                    <a href="#" class="main__page__competences--bouton bouton">Voir mes projets</a>
+                </article>
 
-                    <a href="#" class="main__page__competences--btn">Voir les commpétences</a>
+                <article class="main__page__num-page">
+                    <p>1</p>
                 </article>
             </section>
 
             <div class="main--separation"></div>
 
             <section class="main__page col-page">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, voluptas pariatur sint error
-                    omnis expedita repellendus dolorem modi nobis obcaecati dolor iusto illum exercitationem suscipit
-                    deserunt sed quam, dolorum nemo voluptate magnam fugit consequatur ea. Tempore dolore, eveniet non
-                    doloremque asperiores qui dolorum tenetur impedit rerum iste delectus soluta quidem suscipit quas
-                    cupiditate nulla officiis voluptatibus nihil libero porro, repudiandae amet? Esse facilis nostrum
-                    sequi ducimus aspernatur soluta, veniam consequatur debitis voluptatibus quia quod dignissimos
-                    vitae consectetur laudantium rerum natus ad autem hic vero suscipit! Natus facilis esse accusantium
-                    perspiciatis quas nam cumque obcaecati adipisci aspernatur repellat, assumenda illo nulla!</p>
+                <section class="main__page__code" data-tab="tableau">
+                    <div data-tab="chaine">
+                        <div class="tabs--etiquette" data-tab-etiquette="1">
+                            <p>HTML</p>
+                        </div>
+                        <div class="tabs--etiquette" data-tab-etiquette="2">
+                            <p>CSS</p>
+                        </div>
+                        <div class="tabs--etiquette" data-tab-etiquette="3">
+                            <p>CSS</p>
+                        </div>
+                    </div>
+                    <article class="main__page__code__content tab-content tab-visible" data-tab-content="1">
+                        <p><span class="code-bleu">&lt;!</span><span class="code-rouge">DOCTYPE</span> <span class="code-violet">html</span><span
+                                class="code-bleu">&gt;</span></p>
+                        <p><span class="code-bleu">&lt;p&gt;</span>Du code HTML<span class="code-bleu">&lt;p&gt;</span></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam placeat voluptatibus
+                            atque nostrum at repudiandae nisi molestias deserunt, suscipit voluptas blanditiis cum
+                            quibusdam reprehenderit totam error itaque! Placeat, at quasi.</p>
+                    </article>
+                    <article class="main__page__code__content tab-content" data-tab-content="2">
+                        <p><span class="code-bleu">&lt;!</span><span class="code-rouge">DOCTYPE</span> <span class="code-violet">html</span><span
+                                class="code-bleu">&gt;</span></p>
+                        <p><span class="code-bleu">&lt;p&gt;</span>Du code HTML<span class="code-bleu">&lt;p&gt;</span></p>
+                    </article>
+                    <article class="main__page__code__content tab-content" data-tab-content="3">
+                        <p><span class="code-bleu">&lt;!</span><span class="code-rouge">DOCTYPE</span> <span class="code-violet">html</span><span
+                                class="code-bleu">&gt;</span></p>
+                        <p><span class="code-bleu">&lt;p&gt;</span>Du code HTML<span class="code-bleu">&lt;p&gt;</span></p>
+                    </article>
+                </section>
+
+                <article class="main__page__num-page">
+                    <p>2</p>
+                </article>
             </section>
 
-            <section class="main__n-page"><p>1</p></section>
+            <footer class="footer">
+                    <div class="footer__reseau">
+                        <a href="http://github.com/Myllaume"><img src="./src/icons/icone_github.svg" alt="" class="footer__reseau--icone"></a>
+                        <a href="http://pinterest.com/pinterest.fr/myllaume/"><img src="./src/icons/icone_pinterest.svg" alt="" class="footer__reseau--icone"></a>
+                        <a href="https://www.behance.net/brioudesgu6311"><img src="./src/icons/icone_behance.svg" alt="" class="footer__reseau--icone"></a>
+                        <a href="http://linkedin.com/in/guillaume-brioudes-a81225157/"><img src="./src/icons/icone_linkedin.svg" alt="" class="footer__reseau--icone"></a>
+                    </div>
+                </footer>
 
         </main>
 
     </div>
+
+    <script src="./script/main.js"></script>
 
 </body>
 

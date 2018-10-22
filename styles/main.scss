@@ -9,8 +9,11 @@
 @import './scss/base/texts';
 @import './scss/base/typography';
 
-// LAYOUT
+// -- COMPONENTS
+@import './scss/components/buttons';
+@import './scss/components/element-carnet';
 
+// -- LAYOUT
 @import './scss/layout/header';
 
 // -- PAGES

@@ -1,9 +1,23 @@
 @mixin size($width, $height: $width) {
-    // height s'il ne reçoit pas de valeur est égal à width
+    // height s'il ne reçoit pas de valeur est égale à width
     width: $width;
     height: $height;
 }
 
 @mixin border($borderPos) {
-
+    @if ($borderPos == 'all') {
+        border: $sizeTrait $colorBlack solid;
+    }
+    @if ($borderPos == 'right') {
+        border-right: $sizeTrait $colorBlack solid;
+    }
+    @if ($borderPos == 'left') {
+        border-left: $sizeTrait $colorBlack solid;
+    }
+    @if ($borderPos == 'top') {
+        border-top: $sizeTrait $colorBlack solid;
+    }
+    @if ($borderPos == 'bottom') {
+        border-bottom: $sizeTrait $colorBlack solid;
+    }
 }
