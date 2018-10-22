@@ -14,54 +14,9 @@
 
     <div class="wrapper" id="wrapper">
 
-        <header class="header row">
-
-            <section class="header__raccourcis-nav header__raccourcis-nav-top">
-                <div class="header__raccourcis-nav__menu-burger" id="menu-burger">
-                    <div class="header__raccourcis-nav__menu-burger--barre header__raccourcis-nav__menu-burger--barre---min"></div>
-                    <div class="header__raccourcis-nav__menu-burger--barre header__raccourcis-nav__menu-burger--barre---max"></div>
-                    <div class="header__raccourcis-nav__menu-burger--barre header__raccourcis-nav__menu-burger--barre---moy"></div>
-                </div>
-                <div class="header__raccourcis-nav__loupe">
-                    <div class="header__raccourcis-nav__loupe--cercle"></div>
-                    <div class="header__raccourcis-nav__loupe--manche"></div>
-                </div>
-            </section>
-            <nav class="header__nav-roulante">
-                <a href="#" class="header__nav-roulante--item">Accueil</a>
-                <a href="#" class="header__nav-roulante--item">Contact</a>
-                <a href="#" class="header__nav-roulante--item">Parcours</a>
-                <a href="#" class="header__nav-roulante--item">Projets</a>
-            </nav>
-            <section class="header__raccourcis-nav header__raccourcis-nav-bottom">
-                <div class="header__raccourcis-nav__fleche-suivant">
-                    <div class="header__raccourcis-nav__fleche-suivant--barre"></div>
-                    <div class="header__raccourcis-nav__fleche-suivant--barre---reverse"></div>
-                    <div class="header__raccourcis-nav__fleche-suivant--barre---longue"></div>
-                </div>
-            </section>
-
-        </header>
-
-        <section class="volet" id="volet">
-            <article class="volet__content row" id="volet-content">
-                <nav class="volet__content__nav">
-                    <a href="#" class="volet__content__nav--item">Accueil</a>
-                    <a href="#" class="volet__content__nav--item">Contact</a>
-                    <a href="#" class="volet__content__nav--item">Parcours</a>
-                    <a href="#" class="volet__content__nav--item">Projets</a>
-                </nav>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas voluptates voluptatem, ad omnis
-                    adipisci quisquam harum quasi necessitatibus tempore velit ex repellat vel quo impedit veniam
-                    commodi voluptas nisi delectus consectetur, exercitationem, blanditiis quaerat. Eum, illo numquam
-                    in cupiditate eligendi ut fugiat, aliquam distinctio recusandae sunt sed tempore veniam?
-                    Repellendus, quos hic! Accusamus autem, dolorum enim fugiat nemo modi quaerat sapiente iure
-                    voluptatibus deleniti. Voluptatem blanditiis necessitatibus perferendis voluptate nobis dolorum
-                    magni veritatis doloribus reiciendis voluptas porro quis, at, nesciunt quisquam fuga, officia
-                    dignissimos! Natus pariatur perspiciatis harum ipsa, quibusdam nostrum! Optio dicta cupiditate
-                    aspernatur quae dolores fuga in voluptates?</p>
-            </article>
-        </section>
+        <?php
+            include('include/header.php');
+        ?>
 
         <main class="main row">
 
@@ -141,14 +96,9 @@
                 </article>
             </section>
 
-            <footer class="footer">
-                    <div class="footer__reseau">
-                        <a href="http://github.com/Myllaume"><img src="./src/icons/icone_github.svg" alt="" class="footer__reseau--icone"></a>
-                        <a href="http://pinterest.com/pinterest.fr/myllaume/"><img src="./src/icons/icone_pinterest.svg" alt="" class="footer__reseau--icone"></a>
-                        <a href="https://www.behance.net/brioudesgu6311"><img src="./src/icons/icone_behance.svg" alt="" class="footer__reseau--icone"></a>
-                        <a href="http://linkedin.com/in/guillaume-brioudes-a81225157/"><img src="./src/icons/icone_linkedin.svg" alt="" class="footer__reseau--icone"></a>
-                    </div>
-                </footer>
+            <?php
+            include('include/footer.php');
+            ?>
 
         </main>
 
