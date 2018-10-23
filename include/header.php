@@ -14,7 +14,7 @@
     <nav class="header__nav-roulante">
         <a href="#" class="header__nav-roulante--item">Accueil</a>
         <a href="#" class="header__nav-roulante--item">Contact</a>
-        <a href="#" class="header__nav-roulante--item">Parcours</a>
+        <a href="./pages/parcours.php" class="header__nav-roulante--item">Parcours</a>
         <a href="#" class="header__nav-roulante--item">Projets</a>
     </nav>
     <section class="header__raccourcis-nav header__raccourcis-nav-bottom">
