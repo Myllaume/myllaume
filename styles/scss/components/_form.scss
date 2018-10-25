@@ -1,0 +1,57 @@
+form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    input {
+        @include border('all');
+        @extend %merryweather-light-italic;
+        padding: 2px 10px;
+        display: flex;
+        flex: 1;
+        margin: 5px;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+    }
+
+    input[type=text],
+    input[type=email] {
+        @include size(50%, 30px);
+        background-color: $colorFond;
+
+        &::placeholder {
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+        }
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: $colorOrange;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+    }
+
+    textarea {
+        @include border('all');
+        @extend %merryweather-light;
+        display: flex;
+        margin: 5px;
+        background-color: $colorFond;
+        width: 100%;
+        padding: 2px 10px;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+
+        &::placeholder {
+            @extend %merryweather-light-italic;
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+        }
+    }
+}

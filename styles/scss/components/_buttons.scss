@@ -1,13 +1,13 @@
 .bouton {
-    @include size(220px, 70px);
     @include border('all');
     @extend %link-nav;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1;
+    text-align: center;
+    height: 70px;
     margin: 10px 20px;
-
-    &:hover {
-        background-color: $colorOrange;
-    }
+    max-width: 200px;
+    background-color: $colorOrange;
 }

@@ -1,50 +1,47 @@
-.main {
+.main__page {
 
-    &__page {
+    &__presentation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-        &__presentation {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            &--photo-profil {
-                @include size(100px);
-                @extend %sepia;
-                margin-right: 10px;
-            }
+        &--photo-profil {
+            @include size(100px);
+            @extend %sepia;
+            margin-right: 10px;
         }
-
-        &__competences {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 40px 0;
-
-            &__domaine {
-                @include border('top');
-                @include border('bottom');
-                padding: 10px;
-                margin: 20px 0;
-                
-                &--titres {
-                    font-size: 28px;
-                    margin: 10px 0;
-                }
-            }
-
-            &__esperluette {
-                margin: 5px 0;
-            }
-        }
-
-        &__code {
-            
-            p {
-                color: $colorGray;
-            }
-        }
-
     }
+
+    &__competences {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px 0;
+
+        &__domaine {
+            @include border('top');
+            @include border('bottom');
+            padding: 10px;
+            margin: 20px 0;
+
+            &--titres {
+                font-size: 28px;
+                margin: 10px 0;
+            }
+        }
+
+        &__esperluette {
+            margin: 5px 0;
+        }
+    }
+
+    &__code {
+
+        p {
+            color: $colorGray;
+        }
+    }
+
 }
 
 .photo-profile {

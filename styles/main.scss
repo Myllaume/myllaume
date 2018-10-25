@@ -12,9 +12,13 @@
 // -- COMPONENTS
 @import './scss/components/buttons';
 @import './scss/components/element-carnet';
+@import './scss/components/form';
 
 // -- LAYOUT
 @import './scss/layout/header';
+@import './scss/layout/footer';
 
 // -- PAGES
 @import './scss/pages/accueil';
+@import './scss/pages/parcours';
+@import './scss/pages/contact';

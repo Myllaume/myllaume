@@ -12,8 +12,8 @@
         </div>
     </section>
     <nav class="header__nav-roulante">
-        <a href="#" class="header__nav-roulante--item">Accueil</a>
-        <a href="#" class="header__nav-roulante--item">Contact</a>
+        <a href="../index.php" class="header__nav-roulante--item">Accueil</a>
+        <a href="./pages/contact.php" class="header__nav-roulante--item">Contact</a>
         <a href="./pages/parcours.php" class="header__nav-roulante--item">Parcours</a>
         <a href="#" class="header__nav-roulante--item">Projets</a>
     </nav>

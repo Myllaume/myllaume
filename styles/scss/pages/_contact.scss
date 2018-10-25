@@ -1,0 +1,15 @@
+.texte-form {
+    margin: 0 0 20px 0;
+}
+
+.coordonnes-bloc {
+    @include border('all');
+
+    p {
+        margin: 10px 20px;
+
+        &:last-child {
+            margin-bottom: 20px;
+        }
+    }
+}

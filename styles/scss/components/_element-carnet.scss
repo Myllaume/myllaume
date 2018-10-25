@@ -4,6 +4,35 @@
     background-color: $colorGrayBright;
 }
 
+.case-coche {
+    @include size(20px);
+    @include border('all');
+    position: relative;
+    margin: 15px 20px 15px 0;
+
+    &--branche-petite {
+        @include size($sizeTrait, 12px);
+        @include rotate('angle-gauche');
+        background-color: $colorBlack;
+        position: relative;
+        top: 2px;
+        left: 4px;
+    }
+
+    &--branche-grande {
+        @include size($sizeTrait, 25px);
+        @include rotate(40);
+        position: relative;
+        top: -22px;
+        left: 15px;
+        background-color: $colorBlack;
+    }
+}
+
+.case-a-cocher {
+    @extend .case-coche;
+}
+
 // Tabs
 
 section[data-tab="tableau"] {

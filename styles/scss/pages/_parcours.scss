@@ -1,0 +1,81 @@
+.main__page {
+
+    &__outils {
+        @include border('all');
+        margin: 40px 0;
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+
+            &--icone {
+                background-color: $colorBlack;
+                margin: 5px;
+            }
+        }
+    }
+
+    &__competence {
+        @include border('all');
+        margin: 40px 0;
+
+        &--item {
+            margin-left: 20px;
+            font-size: 18px;
+            line-height: 40px;
+
+            &:last-child {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__experiences {
+        @include border('all');
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+
+            &__activite {
+                display: flex;
+                justify-content: space-between;
+                margin: 10px 20px;
+            }
+        }
+    }
+}
+
+.outil-important__content {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+
+    div {
+        @include size(50px);
+    }
+}
+
+.outil-secondaire__content {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+
+    div {
+        @include size(30px);
+    }
+}
+
+@media (min-width: 450px) {
+
+    .outil-important__content {
+        width: 400px;
+    }
+
+    .outil-secondaire__content {
+        position: absolute;
+        width: 270px;
+    }
+}

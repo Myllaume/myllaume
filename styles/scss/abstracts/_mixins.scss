@@ -21,3 +21,24 @@
         border-bottom: $sizeTrait $colorBlack solid;
     }
 }
+
+@mixin rotate($deg) {
+    @if ($deg == 'vertical') {
+        transform: rotate(90deg);
+    }
+    @if ($deg == 'vertical-flip') {
+        transform: rotate(270deg);
+    }
+    @if ($deg == 'horizontal-flip') {
+        transform: rotate(180deg);
+    }
+    @if ($deg == 'angle-droite') {
+        transform: rotate(45deg);
+    }
+    @if ($deg == 'angle-gauche') {
+        transform: rotate(145deg);
+    }
+    @else {
+        transform: rotate(#{$deg}deg);
+    }
+}

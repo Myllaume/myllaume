@@ -50,41 +50,41 @@
 
             &--manche {
                 @include size(20px, $sizeTrait);
+                @include rotate('angle-droite');
                 position: relative;
                 left: 42px;
                 top: 20px;
                 background-color: $colorBlack;
-                transform: rotate(45deg);
             }
         }
 
         &__fleche-suivant {
-            display: none;
             @include size(100px);
+            display: none;
             border-top: $sizeTrait $colorBlack solid;
 
             &--barre {
                 @include size(30px, $sizeTrait);
+                @include rotate('angle-droite');
                 position: relative;
                 background-color: $colorBlack;
-                transform: rotate(45deg);
                 left: 40px;
                 top: 30px;
 
                 &---reverse {
                     @include size(30px, $sizeTrait);
+                    @include rotate(130);
                     position: relative;
                     background-color: $colorBlack;
-                    transform: rotate(130deg);
                     left: 20px;
                     top: 30px;
                 }
 
                 &---longue {
                     @include size(50px, $sizeTrait);
+                    @include rotate(90);
                     position: relative;
                     background-color: $colorBlack;
-                    transform: rotate(90deg);
                     top: 40px;
                     left: 20px;
                 }
@@ -100,10 +100,10 @@
         }
 
         &--item {
+            @include rotate('vertical-flip');
             @extend %link-nav;
             @extend %marge;
             display: inline-block;
-            transform: rotate(270deg);
             // writing-mode: sideways-lr;
             margin: 50px 0;
             width: 50px;

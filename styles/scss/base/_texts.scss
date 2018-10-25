@@ -10,15 +10,24 @@ a {
 // -- TITRES
 
 h1 {
+    display: inline-block;
     font-size: 32px;
     margin-bottom: 20px;
     letter-spacing: 0.05em;
 }
 
 h2 {
+    display: inline-block;
+    padding: 4px;
     font-size: 24px;
-    margin-bottom: 16px;
     letter-spacing: 0.01em;
+}
+
+h3 {
+    font-size: 19px;
+    margin: 10px 0;
+    letter-spacing: 0.01em;
+    margin-left: 20px;
 }
 
 p {
@@ -27,10 +36,30 @@ p {
     letter-spacing: 0.02em;
 }
 
+a {
+    @extend %merryweather-light-italic;
+    color: $colorGray;
+}
+
 // -- SPANS
 
 .text-big {
     font-size: 22px;
+}
+
+.titre-border {
+    @include border('all');
+    background-color: $colorFond;
+    position: relative;
+    top: -15px;
+    left: 10px;
+    ;
+}
+
+.date {
+    @extend %merryweather-light-italic;
+    font-size: 20px;
+    margin: 0 20px;
 }
 
 // code
