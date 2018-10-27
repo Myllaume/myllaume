@@ -4,7 +4,7 @@
     left: 20px;
 }
 
-.header {   
+.header {
 
     &__raccourcis-nav {
         @extend .row;
@@ -37,59 +37,6 @@
             }
         }
 
-        &__loupe {
-            @include size(100px);
-            position: relative;
-
-            &--cercle {
-                @include size(30px);
-                @include border('all');
-                @extend %marge;
-                border-radius: 50%;
-            }
-
-            &--manche {
-                @include size(20px, $sizeTrait);
-                @include rotate('angle-droite');
-                position: relative;
-                left: 42px;
-                top: 20px;
-                background-color: $colorBlack;
-            }
-        }
-
-        &__fleche-suivant {
-            @include size(100px);
-            display: none;
-            border-top: $sizeTrait $colorBlack solid;
-
-            &--barre {
-                @include size(30px, $sizeTrait);
-                @include rotate('angle-droite');
-                position: relative;
-                background-color: $colorBlack;
-                left: 40px;
-                top: 30px;
-
-                &---reverse {
-                    @include size(30px, $sizeTrait);
-                    @include rotate(130);
-                    position: relative;
-                    background-color: $colorBlack;
-                    left: 20px;
-                    top: 30px;
-                }
-
-                &---longue {
-                    @include size(50px, $sizeTrait);
-                    @include rotate(90);
-                    position: relative;
-                    background-color: $colorBlack;
-                    top: 40px;
-                    left: 20px;
-                }
-            }
-        }
     }
 
     &__nav-roulante {
@@ -126,7 +73,7 @@
             &-top {
                 height: 180px;
             }
-    
+
             &-bottom {
                 height: 90px;
             }

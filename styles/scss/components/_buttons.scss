@@ -11,3 +11,11 @@
     max-width: 200px;
     background-color: $colorOrange;
 }
+
+.bouton-little {
+    @include border('all');
+    @extend %link-nav;
+    @extend .bouton;
+    max-width: 70px;
+    max-height: 30px;
+}

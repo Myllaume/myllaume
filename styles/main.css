@@ -1,6 +1,7 @@
 h1,
 h2,
 h3,
+h4,
 p,
 a, form textarea {
   font-family: 'Merriweather';
@@ -36,7 +37,7 @@ a, .date, form input, form textarea::placeholder {
   font-style: italic;
 }
 
-.volet__content__nav--item, .bouton, .header__nav-roulante--item {
+.volet__content__nav--item, .bouton, .bouton-little, .header__nav-roulante--item {
   text-decoration: none;
   color: #1b1b1b;
   letter-spacing: 0.08em;
@@ -47,7 +48,17 @@ a, .date, form input, form textarea::placeholder {
           filter: sepia(0.4);
 }
 
-.volet {
+.bloc-projet--image {
+  -webkit-filter: sepia(0.4);
+          filter: sepia(0.4);
+}
+
+.bloc-projet--image:hover {
+  -webkit-filter: sepia(0);
+          filter: sepia(0);
+}
+
+.bloc-projet--image, .volet {
   -webkit-transition: all 1.2s;
   transition: all 1.2s;
 }
@@ -241,6 +252,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 p,
 a {
   margin: 0;
@@ -257,11 +269,23 @@ h2 {
   display: inline-block;
   padding: 4px;
   font-size: 24px;
+  margin: 20px 0;
   letter-spacing: 0.01em;
 }
 
 h3 {
+  display: inline-block;
   font-size: 19px;
+  padding: 4px;
+  margin: 10px 0;
+  letter-spacing: 0.01em;
+  margin-left: 20px;
+}
+
+h4 {
+  display: inline-block;
+  font-size: 18px;
+  padding: 4px;
   margin: 10px 0;
   letter-spacing: 0.01em;
   margin-left: 20px;
@@ -281,12 +305,16 @@ a {
   font-size: 22px;
 }
 
-.titre-border {
+h2.titre-border, h3.titre-border {
   border: 2px #1b1b1b solid;
   background-color: #e2decf;
   position: relative;
-  top: -15px;
+  top: -35px;
   left: 10px;
+}
+
+h3.titre-border {
+  top: -25px;
 }
 
 .date {
@@ -320,7 +348,7 @@ a {
   font-style: italic;
 }
 
-.bouton {
+.bouton, .bouton-little {
   border: 2px #1b1b1b solid;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -339,6 +367,12 @@ a {
   margin: 10px 20px;
   max-width: 200px;
   background-color: #ccb6a1;
+}
+
+.bouton-little {
+  border: 2px #1b1b1b solid;
+  max-width: 70px;
+  max-height: 30px;
 }
 
 .ligne-text {
@@ -525,7 +559,7 @@ form textarea::placeholder {
   letter-spacing: 0.02em;
 }
 
-.header__raccourcis-nav__loupe--cercle, .header__nav-roulante--item {
+.header__nav-roulante--item {
   position: relative;
   top: 20px;
   left: 20px;
@@ -565,74 +599,6 @@ form textarea::placeholder {
 
 .header__raccourcis-nav__menu-burger--barre---moy {
   width: 35px;
-}
-
-.header__raccourcis-nav__loupe {
-  width: 100px;
-  height: 100px;
-  position: relative;
-}
-
-.header__raccourcis-nav__loupe--cercle {
-  width: 30px;
-  height: 30px;
-  border: 2px #1b1b1b solid;
-  border-radius: 50%;
-}
-
-.header__raccourcis-nav__loupe--manche {
-  width: 20px;
-  height: 2px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  -webkit-transform: rotate(angle-droitedeg);
-          transform: rotate(angle-droitedeg);
-  position: relative;
-  left: 42px;
-  top: 20px;
-  background-color: #1b1b1b;
-}
-
-.header__raccourcis-nav__fleche-suivant {
-  width: 100px;
-  height: 100px;
-  display: none;
-  border-top: 2px #1b1b1b solid;
-}
-
-.header__raccourcis-nav__fleche-suivant--barre {
-  width: 30px;
-  height: 2px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  -webkit-transform: rotate(angle-droitedeg);
-          transform: rotate(angle-droitedeg);
-  position: relative;
-  background-color: #1b1b1b;
-  left: 40px;
-  top: 30px;
-}
-
-.header__raccourcis-nav__fleche-suivant--barre---reverse {
-  width: 30px;
-  height: 2px;
-  -webkit-transform: rotate(130deg);
-          transform: rotate(130deg);
-  position: relative;
-  background-color: #1b1b1b;
-  left: 20px;
-  top: 30px;
-}
-
-.header__raccourcis-nav__fleche-suivant--barre---longue {
-  width: 50px;
-  height: 2px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  position: relative;
-  background-color: #1b1b1b;
-  top: 40px;
-  left: 20px;
 }
 
 .header__nav-roulante {
@@ -872,5 +838,40 @@ form textarea::placeholder {
 
 .coordonnes-bloc p:last-child {
   margin-bottom: 20px;
+}
+
+.panneau-titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.panneau-titre div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bloc-projet {
+  border: 2px #1b1b1b solid;
+  margin: 40px 0 10px 0;
+}
+
+.bloc-projet--image {
+  width: 90%;
+  height: 100%;
+}
+
+.bloc-projet__description {
+  padding: 10px;
 }
 /*# sourceMappingURL=main.css.map */

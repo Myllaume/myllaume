@@ -1,8 +1,8 @@
 <nav class="volet__content__nav">
-    <a href="#" class="volet__content__nav--item">Accueil</a>
-    <a href="#" class="volet__content__nav--item">Contact</a>
-    <a href="#" class="volet__content__nav--item">Parcours</a>
-    <a href="#" class="volet__content__nav--item">Projets</a>
+    <a href="/index.php" class="volet__content__nav--item">Accueil</a>
+    <a href="/pages/contact.php" class="volet__content__nav--item">Contact</a>
+    <a href="/pages/parcours.php" class="volet__content__nav--item">Parcours</a>
+    <a href="/pages/projet.php" class="volet__content__nav--item">Projets</a>
 </nav>
 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas voluptates voluptatem, ad omnis
     adipisci quisquam harum quasi necessitatibus tempore velit ex repellat vel quo impedit veniam

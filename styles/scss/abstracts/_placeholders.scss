@@ -24,6 +24,15 @@
     filter: sepia(0.4);
 }
 
+%sepia-hover {
+    filter: sepia(0.4);
+    @extend %transition;
+
+    &:hover {
+        filter: sepia(0);
+    }
+}
+
 %transition {
     transition: all 1.2s;
 }

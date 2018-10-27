@@ -1,0 +1,25 @@
+.panneau-titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.bloc-projet {
+    @include border('all');
+    margin: 40px 0 10px 0;
+
+    &--image {
+        @extend %sepia-hover;
+        width: 90%;
+        height: 100%;
+    }
+
+    &__description {
+        padding: 10px;
+    }
+}

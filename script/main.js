@@ -22,22 +22,35 @@ Création d'un système de tableau à volet
 var dataTabEtiquette = document.querySelectorAll('[data-tab-etiquette]');
 var dataTabContent = document.querySelectorAll('[data-tab-content]');
 
-// -- Fonctions
+console.log(dataTabContent);
 
-function afficherTabContent(etiquetteClick) {
-    var numEtiquette = etiquetteClick.dataset.tabEtiquette;
-    var etiquetteSelect = document.querySelectorAll("[data-tab-content=\""+numEtiquette+"\"]");
-    console.log(etiquetteSelect);
-    etiquetteSelect.classList.add('tab-visible');
+for (var i = 0; i < dataTabEtiquette.length; i++) {
+    dataTabContent[i].style.display = "none";
 }
 
-// -- Traitement
+dataTabEtiquette[0].addEventListener('click', function () {
+    for (var k = 0; k < dataTabEtiquette.length; k++) {
+        if (k == 0) dataTabContent[k].style.display = "block";
+        else {
+            dataTabContent[k].style.display = "none";
+        }
+    }
+})
 
-for (var p = 0; p < dataTabEtiquette.length; p++) {
-    var etiquette = dataTabEtiquette[p];
+dataTabEtiquette[1].addEventListener('click', function () {
+    for (var k = 0; k < dataTabEtiquette.length; k++) {
+        if (k == 1) dataTabContent[k].style.display = "block";
+        else {
+            dataTabContent[k].style.display = "none";
+        }
+    }
+})
 
-    etiquette.addEventListener('click', function () {
-        var etiquetteClick = this;
-        afficherTabContent(etiquetteClick);
-    });
-}
+dataTabEtiquette[2].addEventListener('click', function () {
+    for (var k = 0; k < dataTabEtiquette.length; k++) {
+        if (k == 2) dataTabContent[k].style.display = "block";
+        else {
+            dataTabContent[k].style.display = "none";
+        }
+    }
+})

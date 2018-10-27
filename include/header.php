@@ -6,24 +6,13 @@
             <div class="header__raccourcis-nav__menu-burger--barre header__raccourcis-nav__menu-burger--barre---max"></div>
             <div class="header__raccourcis-nav__menu-burger--barre header__raccourcis-nav__menu-burger--barre---moy"></div>
         </div>
-        <div class="header__raccourcis-nav__loupe">
-            <div class="header__raccourcis-nav__loupe--cercle"></div>
-            <div class="header__raccourcis-nav__loupe--manche"></div>
-        </div>
     </section>
     <nav class="header__nav-roulante">
-        <a href="../index.php" class="header__nav-roulante--item">Accueil</a>
-        <a href="./pages/contact.php" class="header__nav-roulante--item">Contact</a>
-        <a href="./pages/parcours.php" class="header__nav-roulante--item">Parcours</a>
-        <a href="#" class="header__nav-roulante--item">Projets</a>
+        <a href="/index.php" class="header__nav-roulante--item">Accueil</a>
+        <a href="/pages/contact.php" class="header__nav-roulante--item">Contact</a>
+        <a href="/pages/parcours.php" class="header__nav-roulante--item">Parcours</a>
+        <a href="/pages/projet.php" class="header__nav-roulante--item">Projets</a>
     </nav>
-    <section class="header__raccourcis-nav header__raccourcis-nav-bottom">
-        <div class="header__raccourcis-nav__fleche-suivant">
-            <div class="header__raccourcis-nav__fleche-suivant--barre"></div>
-            <div class="header__raccourcis-nav__fleche-suivant--barre---reverse"></div>
-            <div class="header__raccourcis-nav__fleche-suivant--barre---longue"></div>
-        </div>
-    </section>
 
 </header>
 

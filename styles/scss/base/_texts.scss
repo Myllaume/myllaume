@@ -1,6 +1,7 @@
 h1,
 h2,
 h3,
+h4,
 p,
 a {
     @extend %merryweather-light;
@@ -20,11 +21,23 @@ h2 {
     display: inline-block;
     padding: 4px;
     font-size: 24px;
+    margin: 20px 0;
     letter-spacing: 0.01em;
 }
 
 h3 {
+    display: inline-block;
     font-size: 19px;
+    padding: 4px;
+    margin: 10px 0;
+    letter-spacing: 0.01em;
+    margin-left: 20px;
+}
+
+h4 {
+    display: inline-block;
+    font-size: 18px;
+    padding: 4px;
     margin: 10px 0;
     letter-spacing: 0.01em;
     margin-left: 20px;
@@ -47,13 +60,17 @@ a {
     font-size: 22px;
 }
 
-.titre-border {
+h2.titre-border {
     @include border('all');
     background-color: $colorFond;
     position: relative;
-    top: -15px;
+    top: -35px;
     left: 10px;
-    ;
+}
+
+h3.titre-border {
+    @extend h2.titre-border;
+    top: -25px;
 }
 
 .date {
