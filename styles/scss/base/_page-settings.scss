@@ -110,6 +110,11 @@ body {
     padding: 10px 20px;
 }
 
+.image-decorative {
+    @extend %sepia;
+    width: 100%;
+}
+
 @media (min-width: 800px) {
 
     .wrapper {

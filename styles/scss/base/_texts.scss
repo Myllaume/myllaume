@@ -47,6 +47,7 @@ p {
     font-size: 15px;
     line-height: 22px;
     letter-spacing: 0.02em;
+    margin: 10px 0;
 }
 
 a {
@@ -54,7 +55,11 @@ a {
     color: $colorGray;
 }
 
-// -- SPANS
+// -- SPECIAL
+
+.lettrine::first-letter {
+    font-size: 50px;
+}
 
 .text-big {
     font-size: 22px;

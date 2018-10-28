@@ -1,3 +1,5 @@
+console.log('JS actif !');
+
 /***************************
 Menu déroulant
  *****************************/
@@ -14,43 +16,78 @@ boutonBurger.addEventListener('click', function () {
     voletContent.classList.toggle('volet__content---active');
 });
 
+
 /***************************
-Création d'un système de tableau à volet
+Vérification formulaire
  *****************************/
 
-//  -- Repérages
-var dataTabEtiquette = document.querySelectorAll('[data-tab-etiquette]');
-var dataTabContent = document.querySelectorAll('[data-tab-content]');
+var inputNom = document.getElementById('nom');
+var inputMail = document.getElementById('mail');
+var inputSujet = document.getElementById('sujet');
+var inputMessage = document.getElementById('message');
+var form = document.getElementById('form-contact');
 
-console.log(dataTabContent);
+// reset du formulaire
+form.reset();
 
-for (var i = 0; i < dataTabEtiquette.length; i++) {
-    dataTabContent[i].style.display = "none";
+// fonctions de vérification
+function verifNom() {
+    var inputNom = document.getElementById('nom');
+    if ((inputNom.value.length > 3) && (inputNom.value.length < 40)) {
+        inputPseudo.classList.remove('error-form');
+        return true;
+    } else {
+        console.log("Le pseudo n'est pas valide !");
+        inputNom.classList.add('error-form');
+        return false;
+    }
 }
 
-dataTabEtiquette[0].addEventListener('click', function () {
-    for (var k = 0; k < dataTabEtiquette.length; k++) {
-        if (k == 0) dataTabContent[k].style.display = "block";
-        else {
-            dataTabContent[k].style.display = "none";
-        }
+function verifSujet() {
+    var inputSujet = document.getElementById('sujet');
+    if ((inputSujet.value.length > 3) && (inputSujet.value.length < 40)) {
+        inputSujet.classList.remove('error-form');
+        return true;
+    } else {
+        console.log("Le sujet n'est pas valide !");
+        inputSujet.classList.add('error-form');
+        return false;
     }
-})
+}
 
-dataTabEtiquette[1].addEventListener('click', function () {
-    for (var k = 0; k < dataTabEtiquette.length; k++) {
-        if (k == 1) dataTabContent[k].style.display = "block";
-        else {
-            dataTabContent[k].style.display = "none";
-        }
+function verifMail() {
+    var regex_mail = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
+    var inputMail = document.getElementById('mail');
+    if ((!regex_mail.test(inputMail.value)) || (inputSujet.value.length > 1))  {
+        inputMail.classList.remove('error-form');
+        return true;
+    } else {
+        console.log("Le sujet n'est pas valide !");
+        inputMail.classList.add('error-form');
+        return false;
     }
-})
+}
 
-dataTabEtiquette[2].addEventListener('click', function () {
-    for (var k = 0; k < dataTabEtiquette.length; k++) {
-        if (k == 2) dataTabContent[k].style.display = "block";
-        else {
-            dataTabContent[k].style.display = "none";
-        }
+function verifMessage() {
+    var inputMessage = document.getElementById('message');
+    if ((inputMessage.value.length > 3)) {
+        inputMessage.classList.remove('error-form');
+        return true;
+    } else {
+        console.log("Le message n'est pas valide !");
+        inputMessage.classList.add('error-form');
+        return false;
     }
-})
+}
+
+// vérifications
+inputNom.addEventListener("blur", verifNom);
+inputSujet.addEventListener("blur", verifSujet);
+inputNom.addEventListener("blur", verifMail);
+inputMessage.addEventListener("blur", verifMessage);
+
+// empêcher le form de s'envoyer
+form.addEventListener("submit", function(e) {
+    if (verifNom(true) && verifSujet(true) && verifMessage(true)) {}
+    else {e.preventDefault();}
+});

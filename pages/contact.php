@@ -19,12 +19,15 @@
                 <p class="texte-form">Avec le formulaire ci-dessous, vous pouvez me contacter pour toute demande,
                     information.</p>
 
-                <form action="" method="post">
-                    <input type="text" name="nom" id="nom" placeholder="Votre nom">
-                    <input type="email" name="mail" id="mail" placeholder="Votre adresse email">
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
+                <form action="./contact.php" method="post" id="form-contact" require>
+                    <input type="text" name="nom" id="nom" placeholder="Votre nom" require>
+                    <input type="email" name="mail" id="mail" placeholder="Votre adresse email" require>
+                    <input type="text" name="sujet" id="sujet" placeholder="Sujet du message" require>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message" require></textarea>
                     <input type="submit" value="Contacter">
                 </form>
+
+                <?php include("../include/mail.php"); ?>
 
                 <article class="main__page__num-page">
                     <p>3</p>
