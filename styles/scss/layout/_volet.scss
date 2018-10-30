@@ -1,0 +1,71 @@
+.volet {
+    @extend %transition;
+    @include border('bottom');
+    background-color: $colorFond;
+    position: absolute;
+    height: 0;
+    z-index: 50;
+    overflow: hidden;
+
+    &---active {
+        height: 500px;
+        padding: 20px;
+    }
+
+    &__content {
+        opacity: 0;
+
+        &---active {
+            opacity: 1;
+            transition: all 0.5s;
+            transition-delay: 1.2s;
+        }
+
+        &__nav {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 20px 0;
+
+            &--item {
+                @extend %link-nav;
+                display: inline-block;
+                font-size: 26px;
+                width: 50%;
+                padding: 10px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (min-width: 800px) {
+
+    .volet {
+        @include size(100%);
+        @include border('right');
+        border-bottom: 0;
+        width: 102px;
+        height: 100%;
+
+        &---active {
+            width: 798px;
+            padding-left: 150px;
+        }
+
+        &__content__nav {
+            display: none;
+        }
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+    .volet {
+
+        &---active {
+            width: 1148px;
+        }
+    }
+}

@@ -2,16 +2,12 @@
 
     &__outils {
         @include border('all');
-        margin: 40px 0;
 
         &__content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 10px;
+            padding: 2px;
 
             &--icone {
-                background-color: $colorBlack;
+                @include size(60px);
                 margin: 5px;
             }
         }
@@ -48,34 +44,16 @@
     }
 }
 
-.outil-important__content {
-    display: flex;
-    justify-content: space-between;
-    width: 280px;
+@media (min-width: 800px) {
 
-    div {
-        @include size(50px);
+    .main__page__outils__content--icone {
+        @include size(70px);
     }
 }
 
-.outil-secondaire__content {
-    display: flex;
-    justify-content: space-between;
-    width: 200px;
+@media (min-width: 1200px) {
 
-    div {
-        @include size(30px);
-    }
-}
-
-@media (min-width: 450px) {
-
-    .outil-important__content {
-        width: 400px;
-    }
-
-    .outil-secondaire__content {
-        position: absolute;
-        width: 270px;
+    .main__page__outils__content--icone {
+        @include size(80px);
     }
 }

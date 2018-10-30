@@ -13,7 +13,7 @@ a {
 h1 {
     display: inline-block;
     font-size: 32px;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
     letter-spacing: 0.05em;
 }
 
@@ -26,10 +26,8 @@ h2 {
 }
 
 h3 {
-    display: inline-block;
     font-size: 19px;
     padding: 4px;
-    margin: 10px 0;
     letter-spacing: 0.01em;
     margin-left: 20px;
 }
@@ -76,6 +74,7 @@ h2.titre-border {
 h3.titre-border {
     @extend h2.titre-border;
     top: -25px;
+    display: inline-block;
 }
 
 .date {

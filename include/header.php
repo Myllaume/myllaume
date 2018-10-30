@@ -1,4 +1,4 @@
-<header class="header row">
+<header class="header">
 
     <section class="header__raccourcis-nav header__raccourcis-nav-top">
         <div class="header__raccourcis-nav__menu-burger" id="menu-burger">

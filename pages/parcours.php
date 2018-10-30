@@ -18,18 +18,14 @@
 
                 <article class="main__page__outils">
                     <h2 class="titre-border">Outils</h2>
-                    <div class="main__page__outils__content">
-                        <div class="outil-important__content row">
-                            <div class="main__page__outils__content--icone"></div>
-                            <div class="main__page__outils__content--icone"></div>
-                            <div class="main__page__outils__content--icone"></div>
-                            <div class="main__page__outils__content--icone"></div>
-                        </div>
-                        <div class="outil-secondaire__content row">
-                            <div class="main__page__outils__content--icone"></div>
-                            <div class="main__page__outils__content--icone"></div>
-                            <div class="main__page__outils__content--icone"></div>
-                        </div>
+                    <div class="main__page__outils__content row">
+                            <img src="../src/icons/icone_js.svg" alt="" class="main__page__outils__content--icone">
+                            <img src="../src/icons/icone_php.svg" alt="" class="main__page__outils__content--icone">
+                            <img src="../src/icons/icone_css.svg" alt="" class="main__page__outils__content--icone">
+                            <img src="../src/icons/icone_wordpress.svg" alt="" class="main__page__outils__content--icone">
+                            <img src="../src/icons/icone_xd.svg" alt="" class="main__page__outils__content--icone">
+                            <img src="../src/icons/icone_git.svg" alt="" class="main__page__outils__content--icone">
+                            <img src="../src/icons/icone_office.svg" alt="" class="main__page__outils__content--icone">
                 </article>
 
                 <article class="main__page__competence">
@@ -43,7 +39,7 @@
                 </article>
 
                 <article class="main__page__num-page">
-                    <p>3</p>
+                    <p>5</p>
                 </article>
             </section>
 
@@ -74,11 +70,11 @@
                     <h3>Activités associatives</h3>
                     <div class="main__page__experiences__content">
                         <div class="main__page__experiences__content__activite">
-                            <p>Secrétaire général <a href="#">AEAIH</a></p>
+                            <p>Secrétaire général <a href="http://aeaih.org/">AEAIH</a></p>
                             <p class="date">2017-2019</p>
                         </div>
                         <div class="main__page__experiences__content__activite">
-                            <p>Animateur enfant 9-11 ans <a href="#">SGDF</a></p>
+                            <p>Animateur enfant 9-11 ans <a href="https://www.sgdf.fr/le-mouvement/en-bref">SGDF</a></p>
                             <p class="date">2017-2019</p>
                         </div>
                     </div>
@@ -93,7 +89,7 @@
                 </article>
 
                 <article class="main__page__num-page">
-                    <p>4</p>
+                    <p>6</p>
                 </article>
             </section>
             <?php include("../include/footer.html"); ?>

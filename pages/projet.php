@@ -49,7 +49,7 @@
                 </article>
 
                 <article class="main__page__num-page">
-                    <p>3</p>
+                    <p>7</p>
                 </article>
             </section>
 
@@ -76,7 +76,7 @@
                 </article>
 
                 <article class="main__page__num-page">
-                    <p>4</p>
+                    <p>8</p>
                 </article>
             </section>
             <?php include("../include/footer.html"); ?>

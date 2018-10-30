@@ -41,8 +41,8 @@
                             stylisés</p>
                     </div>
                     <div class="row">
-                        <a href="#" class="main__page__competences--bouton bouton col2">Voir mes compétences</a>
-                        <a href="#" class="main__page__competences--bouton bouton col2">Voir mes projets</a>
+                        <a href="./pages/parcours.php" class="main__page__competences--bouton bouton col2">Voir mon parcours</a>
+                        <a href="./pages/projet.php" class="main__page__competences--bouton bouton col2">Voir mes projets</a>
                     </div>
                 </article>
 
@@ -82,8 +82,7 @@
                     </article>
                 </section>
 
-                <article class="
-                    main__page__num-page">
+                <article class="main__page__num-page">
                     <p>2</p>
                 </article>
             </section>

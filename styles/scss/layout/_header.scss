@@ -7,7 +7,6 @@
 .header {
 
     &__raccourcis-nav {
-        @extend .row;
 
         &__menu-burger {
             @include size(90px);
@@ -37,6 +36,9 @@
             }
         }
 
+        &-top {
+            height: 100px;
+        }
     }
 
     &__nav-roulante {
@@ -51,7 +53,6 @@
             @extend %link-nav;
             @extend %marge;
             display: inline-block;
-            // writing-mode: sideways-lr;
             margin: 50px 0;
             width: 50px;
             font-size: 18px;
@@ -65,29 +66,21 @@
         border-bottom: 0;
 
         &__nav-roulante {
+            @include size(50px, 200px);
+            position: fixed;
             display: block;
         }
+    }
+}
 
-        &__raccourcis-nav {
+@media (min-width: 1200px) {
 
-            &-top {
-                height: 180px;
-            }
+    .header {
+        border-bottom: 0;
 
-            &-bottom {
-                height: 90px;
-            }
-
-            &__fleche-suivant {
-                display: block;
-            }
-
-            &__loupe {
-                top: 10px;
-                border-bottom: $sizeTrait $colorBlack solid;
-            }
-
+        &__nav-roulante {
+            position: static;
+            display: block;
         }
     }
-
 }
