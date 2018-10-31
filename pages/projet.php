@@ -21,9 +21,10 @@
                 <div class="panneau-titre">
                     <h2>Web</h2>
                     <a href="http://github.com/Myllaume" target="_blank" class="bouton">
-                        <div>
+                        <div class="bouton-volet-content">
                             <p>Voir mon GitHub</p>
                             <img src="../src/icons/icone_github.svg" alt="" class="footer__reseau--icone">
+                            <div class="bouton-volet-animation"></div>
                         </div>
                     </a>
                 </div>
@@ -34,7 +35,12 @@
                         <img src="../src/images/projet_schprochrenner.png" alt="" class="bloc-projet--image">
                         <h4>Schprochrener</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, vitae?</p>
-                        <a href="" class="bouton-little">Voir</a>
+                        <a href="" class="bouton-little">
+                            <div class="bouton-volet-content">
+                                <p>Voir</p>
+                                <div class="bouton-volet-animation"></div>
+                            </div>
+                        </a>
                     </div>
                 </article>
 
@@ -44,7 +50,12 @@
                         <img src="../src/images/projet_myllaume.png" alt="" class="bloc-projet--image">
                         <h4>Myllaume, v1</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, vitae?</p>
-                        <a href="" class="bouton-little">Voir</a>
+                        <a href="" class="bouton-little">
+                            <div class="bouton-volet-content">
+                                <p>Voir</p>
+                                <div class="bouton-volet-animation"></div>
+                            </div>
+                        </a>
                     </div>
                 </article>
 
@@ -60,9 +71,10 @@
                 <div class="panneau-titre">
                     <h2>Rédaction</h2>
                     <a href="https://medium.com/@myllaume" target="_blank" class="bouton">
-                        <div>
+                        <div class="bouton-volet-content">
                             <p>Voir mon Medium</p>
                             <img src="../src/icons/icone_medium.svg" alt="" class="footer__reseau--icone">
+                            <div class="bouton-volet-animation"></div>
                         </div>
                     </a>
                 </div>

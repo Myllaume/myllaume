@@ -52,10 +52,12 @@
             @include rotate('vertical-flip');
             @extend %link-nav;
             @extend %marge;
+            @extend %transition;
             display: inline-block;
-            margin: 50px 0;
+            margin: 40px 0;
             width: 50px;
             font-size: 18px;
+            padding: 10px;
         }
     }
 }
@@ -81,6 +83,13 @@
         &__nav-roulante {
             position: static;
             display: block;
+
+            &--item:hover {
+                
+                &:hover {
+                    font-size: 22px;
+                }
+            }
         }
     }
 }

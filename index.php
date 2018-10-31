@@ -41,8 +41,18 @@
                             stylisés</p>
                     </div>
                     <div class="row">
-                        <a href="./pages/parcours.php" class="main__page__competences--bouton bouton col2">Voir mon parcours</a>
-                        <a href="./pages/projet.php" class="main__page__competences--bouton bouton col2">Voir mes projets</a>
+                        <a href="./pages/parcours.php" class="main__page__competences--bouton bouton col2">
+                            <div class="bouton-volet-content">
+                                <p>Voir mon parcours</p>
+                                <div class="bouton-volet-animation"></div>
+                            </div>
+                        </a>
+                        <a href="./pages/projet.php" class="main__page__competences--bouton bouton col2">
+                            <div class="bouton-volet-content">
+                                <p>Voir mes projets</p>
+                                <div class="bouton-volet-animation"></div>
+                            </div>
+                        </a>
                     </div>
                 </article>
 

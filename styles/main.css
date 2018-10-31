@@ -58,7 +58,7 @@ a, .date, form input, form textarea::placeholder {
           filter: sepia(0);
 }
 
-.bloc-projet--image, .volet {
+.bloc-projet--image, .bouton-volet-animation, .header__nav-roulante--item, .volet {
   -webkit-transition: all 1.2s;
   transition: all 1.2s;
 }
@@ -195,6 +195,7 @@ h4,
 p,
 a {
   margin: 0;
+  cursor: default;
 }
 
 h1 {
@@ -237,6 +238,11 @@ p {
 
 a {
   color: #494949;
+  cursor: pointer;
+}
+
+a p {
+  cursor: pointer;
 }
 
 .lettrine::first-letter {
@@ -306,8 +312,8 @@ h3.titre-border {
       -ms-flex: 1;
           flex: 1;
   text-align: center;
-  height: 70px;
-  margin: 10px 20px;
+  height: 60px;
+  margin: 20px 20px;
   max-width: 200px;
   background-color: #ccb6a1;
 }
@@ -316,6 +322,47 @@ h3.titre-border {
   border: 2px #1b1b1b solid;
   max-width: 70px;
   max-height: 30px;
+}
+
+.bouton-volet-content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.bouton-volet-content p {
+  position: relative;
+  z-index: 10;
+}
+
+.bouton-volet-content img {
+  position: relative;
+  z-index: 10;
+}
+
+.bouton-volet-animation {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  height: 0;
+  overflow: hidden;
+}
+
+.bouton-volet-content:hover .bouton-volet-animation {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #dbcbbc;
 }
 
 .case-coche, .case-a-cocher {
@@ -559,9 +606,10 @@ form textarea::placeholder {
   -webkit-transform: rotate(vertical-flipdeg);
           transform: rotate(vertical-flipdeg);
   display: inline-block;
-  margin: 50px 0;
+  margin: 40px 0;
   width: 50px;
   font-size: 18px;
+  padding: 10px;
 }
 
 @media (min-width: 800px) {
@@ -583,6 +631,9 @@ form textarea::placeholder {
   .header__nav-roulante {
     position: static;
     display: block;
+  }
+  .header__nav-roulante--item:hover:hover {
+    font-size: 22px;
   }
 }
 
@@ -649,6 +700,16 @@ form textarea::placeholder {
   width: 50%;
   padding: 10px;
   text-align: center;
+}
+
+.volet-colonne {
+  width: 100%;
+  height: 500px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 20px;
+  min-width: 300px;
 }
 
 @media (min-width: 800px) {

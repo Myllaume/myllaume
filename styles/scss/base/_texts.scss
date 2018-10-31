@@ -6,6 +6,7 @@ p,
 a {
     @extend %merryweather-light;
     margin: 0;
+    cursor: default;
 }
 
 // -- TITRES
@@ -51,6 +52,11 @@ p {
 a {
     @extend %merryweather-light-italic;
     color: $colorGray;
+    cursor: pointer;
+
+    p {
+        cursor: pointer;
+    }
 }
 
 // -- SPECIAL
