@@ -16,7 +16,7 @@
             <section class="main__page col-page">
                 <h1 class="main__page--titre-page">Mon parcours</h1>
 
-                <article class="main__page__outils">
+                <article class="main__page__outils titre-border_content">
                     <h2 class="titre-border">Outils</h2>
                     <div class="main__page__outils__content row">
                             <img src="../src/icons/icone_js.svg" alt="" class="main__page__outils__content--icone">
@@ -28,7 +28,7 @@
                             <img src="../src/icons/icone_office.svg" alt="" class="main__page__outils__content--icone">
                 </article>
 
-                <article class="main__page__competence">
+                <article class="main__page__competence titre-border_content">
                     <h2 class="titre-border">Compétences</h2>
                     <p class="main__page__competence--item">Développer le visuel d'un site</p>
                     <p class="main__page__competence--item">Dynamiser un site</p>
@@ -47,7 +47,7 @@
 
             <section class="main__page col-page">
 
-                <article class="main__page__experiences">
+                <article class="main__page__experiences titre-border_content">
                     <h2 class="titre-border">Expériences</h2>
 
                     <h3>Études</h3>
@@ -71,10 +71,10 @@
                     <div class="main__page__experiences__content">
                         <div class="main__page__experiences__content__activite">
                             <p>Secrétaire général <a href="http://aeaih.org/">AEAIH</a></p>
-                            <p class="date">2017-2019</p>
+                            <p class="date">2018-2019</p>
                         </div>
                         <div class="main__page__experiences__content__activite">
-                            <p>Animateur enfant 9-11 ans <a href="https://www.sgdf.fr/le-mouvement/en-bref">SGDF</a></p>
+                            <p>Animateur pour 30 enfants de 9-11 ans <a href="https://www.sgdf.fr/le-mouvement/en-bref">SGDF</a></p>
                             <p class="date">2017-2019</p>
                         </div>
                     </div>
@@ -82,8 +82,8 @@
                     <h3>Activités professionnelles</h3>
                     <div class="main__page__experiences__content">
                         <div class="main__page__experiences__content__activite">
-                            <p>Employé commercial Leclerc</p>
-                            <p class="date">Étés 2017 et 2018</p>
+                            <p>Employé d'été commercial Leclerc</p>
+                            <p class="date">2017 et 2018</p>
                         </div>
                     </div>
                 </article>

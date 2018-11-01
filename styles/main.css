@@ -10,28 +10,28 @@ a, form textarea {
 }
 
 
-a, .date, form input, form textarea::-webkit-input-placeholder {
+a, .date, .annonce-prochainement, form input, form textarea::-webkit-input-placeholder {
   font-family: 'Merriweather';
   font-weight: 300;
   font-style: italic;
 }
 
 
-a, .date, form input, form textarea:-ms-input-placeholder {
+a, .date, .annonce-prochainement, form input, form textarea:-ms-input-placeholder {
   font-family: 'Merriweather';
   font-weight: 300;
   font-style: italic;
 }
 
 
-a, .date, form input, form textarea::-ms-input-placeholder {
+a, .date, .annonce-prochainement, form input, form textarea::-ms-input-placeholder {
   font-family: 'Merriweather';
   font-weight: 300;
   font-style: italic;
 }
 
 
-a, .date, form input, form textarea::placeholder {
+a, .date, .annonce-prochainement, form input, form textarea::placeholder {
   font-family: 'Merriweather';
   font-weight: 300;
   font-style: italic;
@@ -201,7 +201,7 @@ a {
 h1 {
   display: inline-block;
   font-size: 32px;
-  margin-bottom: 45px;
+  margin-bottom: 20px;
   letter-spacing: 0.05em;
 }
 
@@ -256,7 +256,7 @@ a p {
 h2.titre-border, h3.titre-border {
   border: 2px #1b1b1b solid;
   background-color: #e2decf;
-  position: relative;
+  position: absolute;
   top: -35px;
   left: 10px;
 }
@@ -266,21 +266,20 @@ h3.titre-border {
   display: inline-block;
 }
 
+.titre-border_content {
+  position: relative;
+  padding: 30px 0 10px 0;
+}
+
 .date {
   font-size: 20px;
   margin: 0 20px;
 }
 
-.code-rouge {
-  color: rgba(252, 0, 0, 0.555);
-}
-
-.code-bleu {
-  color: rgba(35, 35, 201, 0.555);
-}
-
-.code-violet {
-  color: rgba(128, 0, 128, 0.555);
+.annonce-prochainement {
+  text-align: center;
+  font-size: 25px;
+  color: #999999;
 }
 
 @font-face {
@@ -320,8 +319,7 @@ h3.titre-border {
 
 .bouton-little {
   border: 2px #1b1b1b solid;
-  max-width: 70px;
-  max-height: 30px;
+  max-height: 40px;
 }
 
 .bouton-volet-content {
@@ -665,10 +663,11 @@ form textarea::placeholder {
   height: 0;
   z-index: 50;
   overflow: hidden;
+  width: 100%;
 }
 
 .volet---active {
-  height: 500px;
+  height: 200px;
   padding: 20px;
 }
 
@@ -712,6 +711,10 @@ form textarea::placeholder {
   min-width: 300px;
 }
 
+.volet__content__colonnes {
+  display: none;
+}
+
 @media (min-width: 800px) {
   .volet {
     width: 100%;
@@ -727,6 +730,11 @@ form textarea::placeholder {
   }
   .volet__content__nav {
     display: none;
+  }
+  .volet__content__colonnes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -806,17 +814,13 @@ form textarea::placeholder {
 
 .main__page__competence {
   border: 2px #1b1b1b solid;
-  margin: 40px 0;
+  margin: 30px 0;
 }
 
 .main__page__competence--item {
   margin-left: 20px;
   font-size: 18px;
   line-height: 40px;
-}
-
-.main__page__competence--item:last-child {
-  margin-bottom: 20px;
 }
 
 .main__page__experiences {
@@ -906,5 +910,9 @@ form textarea::placeholder {
 
 .bloc-projet__description {
   padding: 10px;
+}
+
+.main__page--intro {
+  margin-bottom: 40px;
 }
 /*# sourceMappingURL=main.css.map */

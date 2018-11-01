@@ -9,23 +9,24 @@
     <article class="volet-colonne volet-projet">
         <h2>Projets</h2>
 
-        <article class="bloc-projet">
-                    <h3 class="titre-border">Site</h3>
-                    <div class="bloc-projet__description row">
-                        <img src="../src/images/projet_myllaume.png" alt="" class="bloc-projet--image">
-                        <h4>Myllaume, v1</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, vitae?</p>
-                        <a href="" class="bouton-little">
-                            <div class="bouton-volet-content">
-                                <p>Voir</p>
-                                <div class="bouton-volet-animation"></div>
-                            </div>
-                        </a>
+        <article class="bloc-projet titre-border_content">
+            <h3 class="titre-border">Site</h3>
+            <div class="bloc-projet__description row">
+                <img src="/src/images/projet_myllaume.png" alt="" class="bloc-projet--image">
+                <h4>Myllaume, v1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, vitae?</p>
+                <a href="" class="bouton-little">
+                    <div class="bouton-volet-content">
+                        <p>Voir</p>
+                        <div class="bouton-volet-animation"></div>
                     </div>
-                </article>
+                </a>
+            </div>
+        </article>
     </article>
 
     <article class="volet-colonne volet-blog">
         <h2>Articles</h2>
+        <p class="annonce-prochainement">À paraître prochainement...</p>
     </article>
 </section>

@@ -6,9 +6,10 @@
     height: 0;
     z-index: 50;
     overflow: hidden;
+    width: 100%;
 
     &---active {
-        height: 500px;
+        height: 200px;
         padding: 20px;
     }
 
@@ -46,6 +47,10 @@
     min-width: 300px;
 }
 
+.volet__content__colonnes {
+    display: none;
+}
+
 @media (min-width: 800px) {
 
     .volet {
@@ -63,6 +68,10 @@
         &__content__nav {
             display: none;
         }
+    }
+
+    .volet__content__colonnes {
+        display: flex;
     }
 }
 

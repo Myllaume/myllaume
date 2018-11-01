@@ -16,8 +16,7 @@
     @include border('all');
     @extend %link-nav;
     @extend .bouton;
-    max-width: 70px;
-    max-height: 30px;
+    max-height: 40px;
 }
 
 // animation
