@@ -34,7 +34,7 @@ form.reset();
 function verifNom() {
     var inputNom = document.getElementById('nom');
     if ((inputNom.value.length > 3) && (inputNom.value.length < 40)) {
-        inputPseudo.classList.remove('error-form');
+        inputNom.classList.remove('error-form');
         return true;
     } else {
         console.log("Le pseudo n'est pas valide !");
@@ -58,7 +58,7 @@ function verifSujet() {
 function verifMail() {
     var regex_mail = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
     var inputMail = document.getElementById('mail');
-    if ((!regex_mail.test(inputMail.value)) || (inputSujet.value.length > 1))  {
+    if ((!regex_mail.test(inputMail.value)) || (inputSujet.value.length > 1)) {
         inputMail.classList.remove('error-form');
         return true;
     } else {
@@ -86,8 +86,22 @@ inputSujet.addEventListener("blur", verifSujet);
 inputNom.addEventListener("blur", verifMail);
 inputMessage.addEventListener("blur", verifMessage);
 
+// création message d'erreur
+var newDivFormAlert = document.createElement('div');
+newDivFormAlert.classList.add("error-form-content");
+var newPFormAlert = document.createElement('p');
+newPFormAlert.classList.add("error-form-message");
+newPFormAlert.innerHTML = "Vous n'avez pas entré toutes les informations !";
+
+newDivFormAlert.appendChild(newPFormAlert);
+
 // empêcher le form de s'envoyer
-form.addEventListener("submit", function(e) {
-    if (verifNom(true) && verifSujet(true) && verifMessage(true)) {}
-    else {e.preventDefault();}
+form.addEventListener("submit", function (e) {
+    if (verifNom(true) && verifSujet(true) && verifMail(true) && verifMessage(true)) {} else {
+        e.preventDefault();
+
+        // affichage erreur
+        var parentForm = form.parentElement;
+        parentForm.insertBefore(newDivFormAlert, form.nextElementSibling);
+    }
 });

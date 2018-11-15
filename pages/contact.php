@@ -38,8 +38,8 @@
 
             <section class="main__page col-page">
 
-                <article class="coordonnes-bloc">
-                    <h2 class="titre-border">Mes coordonnés</h2>
+                <article class="coordonnes-bloc titre-border_content">
+                    <h2 class="titre-border">Mes coordonnées</h2>
                     <p>Mail : brioudes.guillaume@outlook.fr</p>
                     <p>Tel : 06 75 91 35 42</p>
                 </article>

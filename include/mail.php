@@ -60,11 +60,15 @@ if(isset($_POST) && !empty($_POST)) {
     // test d'envoie
     if (mail($mail_destination,$sujet,$message,$header))
     {
-        echo '<p>Message envoyé</p>'; 
+        echo '<div class="error-form-content">';
+        echo '<p class="error-form-message">Message envoyé</p>';
+        echo '</div>';
     } 
     else
     {
-        echo "<p>Une erreur est survenue lors de l'envoi du formulaire par email</p>";
+        echo '<div class="error-form-content">';
+        echo '<p class="error-form-message">Une erreur est survenue lors de l\'envoi du formulaire par email</p>';
+        echo '</div>';
     }
 }
 

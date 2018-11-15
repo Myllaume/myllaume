@@ -544,6 +544,16 @@ form textarea::placeholder {
   border: 2px red solid;
 }
 
+.error-form-content {
+  margin-top: 30px;
+  border: 2px #c75050 solid;
+}
+
+.error-form-message {
+  color: #c75050;
+  text-align: center;
+}
+
 .header__nav-roulante--item {
   position: relative;
   top: 20px;
