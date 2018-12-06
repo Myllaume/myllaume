@@ -52,7 +52,7 @@
             @include rotate('vertical-flip');
             @extend %link-nav;
             @extend %marge;
-            @extend %transition;
+            transition: font-size 1.2s;
             display: inline-block;
             margin: 40px 0;
             width: 50px;

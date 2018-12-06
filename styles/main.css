@@ -58,7 +58,7 @@ a, .date, .annonce-prochainement, form input, form textarea::placeholder {
           filter: sepia(0);
 }
 
-.bloc-projet--image, .bouton-volet-animation, .header__nav-roulante--item, .volet {
+.bloc-projet--image, .bouton-volet-animation, .volet {
   -webkit-transition: all 1.2s;
   transition: all 1.2s;
 }
@@ -613,6 +613,8 @@ form textarea::placeholder {
           transform: rotate(270deg);
   -webkit-transform: rotate(vertical-flipdeg);
           transform: rotate(vertical-flipdeg);
+  -webkit-transition: font-size 1.2s;
+  transition: font-size 1.2s;
   display: inline-block;
   margin: 40px 0;
   width: 50px;
