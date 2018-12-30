@@ -19,13 +19,13 @@
                 <article class="main__page__outils titre-border_content">
                     <h2 class="titre-border">Outils</h2>
                     <div class="main__page__outils__content row">
-                            <img src="../src/icons/icone_js.svg" alt="" class="main__page__outils__content--icone">
-                            <img src="../src/icons/icone_php.svg" alt="" class="main__page__outils__content--icone">
-                            <img src="../src/icons/icone_css.svg" alt="" class="main__page__outils__content--icone">
-                            <img src="../src/icons/icone_wordpress.svg" alt="" class="main__page__outils__content--icone">
-                            <img src="../src/icons/icone_xd.svg" alt="" class="main__page__outils__content--icone">
-                            <img src="../src/icons/icone_git.svg" alt="" class="main__page__outils__content--icone">
-                            <img src="../src/icons/icone_office.svg" alt="" class="main__page__outils__content--icone">
+                        <img src="../src/icons/icone_js.svg" alt="" class="main__page__outils__content--icone">
+                        <img src="../src/icons/icone_php.svg" alt="" class="main__page__outils__content--icone">
+                        <img src="../src/icons/icone_css.svg" alt="" class="main__page__outils__content--icone">
+                        <img src="../src/icons/icone_wordpress.svg" alt="" class="main__page__outils__content--icone">
+                        <img src="../src/icons/icone_xd.svg" alt="" class="main__page__outils__content--icone">
+                        <img src="../src/icons/icone_git.svg" alt="" class="main__page__outils__content--icone">
+                        <img src="../src/icons/icone_office.svg" alt="" class="main__page__outils__content--icone">
                 </article>
 
                 <article class="main__page__competence titre-border_content">
@@ -85,6 +85,13 @@
                         </div>
                     </div>
                 </article>
+
+                <a href="../src/docs/cv_guillaume_brioudes.pdf" target="_blank" class="bouton-little">
+                    <div class="bouton-volet-content">
+                        <p>Télécharger mon CV</p>
+                        <div class="bouton-volet-animation"></div>
+                    </div>
+                </a>
 
                 <article class="main__page__num-page">
                     <p>6</p>
