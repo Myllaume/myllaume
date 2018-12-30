@@ -30,7 +30,37 @@
                 </div>
 
                 <article class="bloc-projet titre-border_content">
-                    <h3 class="titre-border">Maquette</h3>
+                    <h3 class="titre-border">Site responsive</h3>
+                    <div class="bloc-projet__description row">
+                        <img src="../src/images/projet_vacarmes.png" alt="" class="bloc-projet--image">
+                        <h4>Vacarmes</h4>
+                        <p>Développement pour les étudiants en journalisme de Strasbourg (CUEJ) d'un site de présentation pour leur enquête sur les armes à feu.</p>
+                        <a href="http://cuej.info/mini-sites/armes/" target="_blank" class="bouton-little">
+                            <div class="bouton-volet-content">
+                                <p>Voir le site</p>
+                                <div class="bouton-volet-animation"></div>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="bloc-projet titre-border_content">
+                    <h3 class="titre-border">Maquette responsive</h3>
+                    <div class="bloc-projet__description row">
+                        <img src="../src/images/projet_index.png" alt="" class="bloc-projet--image">
+                        <h4>Index, hypertexte</h4>
+                        <p>Maquette responsive pour un projet de blog en cours de développement et au sujet de l'hypertexte.</p>
+                        <a href="../src/docs/maquette_index.pdf" target="_blank" class="bouton-little">
+                            <div class="bouton-volet-content">
+                                <p>Voir la maquette</p>
+                                <div class="bouton-volet-animation"></div>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="bloc-projet titre-border_content">
+                    <h3 class="titre-border">Site responsive</h3>
                     <div class="bloc-projet__description row">
                         <img src="../src/images/projet_schprochrenner.png" alt="" class="bloc-projet--image">
                         <h4>Sprochrenner</h4>
@@ -51,7 +81,7 @@
                 </article>
 
                 <article class="bloc-projet titre-border_content">
-                    <h3 class="titre-border">Site</h3>
+                    <h3 class="titre-border">Site responsive</h3>
                     <div class="bloc-projet__description row">
                         <img src="../src/images/projet_myllaume_v2.png" alt="" class="bloc-projet--image">
                         <h4>Myllaume, v2</h4>
