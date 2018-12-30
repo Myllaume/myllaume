@@ -101,12 +101,6 @@
                         <img src="../src/images/projet_myllaume_v1.png" alt="" class="bloc-projet--image">
                         <h4>Myllaume, v1</h4>
                         <p>Première version de mon site web sous forme d'un cv en ligne complété par un blog.</p>
-                        <a href="" class="bouton-little">
-                            <div class="bouton-volet-content">
-                                <p>Voir</p>
-                                <div class="bouton-volet-animation"></div>
-                            </div>
-                        </a>
                     </div>
                 </article>
 
@@ -121,13 +115,6 @@
 
                 <div class="panneau-titre">
                     <h2>Rédaction</h2>
-                    <a href="" class="bouton">
-                        <div class="bouton-volet-content">
-                            <p><s>Voir mon Medium</s></p>
-                            <img src="../src/icons/icone_medium.svg" alt="" class="footer__reseau--icone">
-                            <!-- <div class="bouton-volet-animation"></div> -->
-                        </div>
-                    </a>
                 </div>
 
                 <article class="bloc-projet titre-border_content">
