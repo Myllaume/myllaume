@@ -12,7 +12,7 @@
         <article class="bloc-projet titre-border_content">
             <h3 class="titre-border">Maquette</h3>
             <div class="bloc-projet__description row">
-                <img src="../src/images/projet_schprochrenner.png" alt="" class="bloc-projet--image">
+                <img src="/src/images/projet_schprochrenner.png" alt="" class="bloc-projet--image">
                 <h4>Sprochrenner</h4>
                 <p>Création avec une de mes camarades de promo d'un site responsive pour l'évenement éponyme.</p>
                 <a href="https://myllaume.github.io/sprochrenner/" target="_blank" class="bouton-little">

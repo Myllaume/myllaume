@@ -10,8 +10,6 @@
 }
 
 .bloc-projet {
-    @include border('all');
-    margin: 40px 0 10px 0;
 
     &--image {
         @extend %sepia-hover;

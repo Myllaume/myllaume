@@ -1,6 +1,6 @@
 .volet {
-    @extend %transition;
     @include border('bottom');
+    transition: height 0.4s;
     background-color: $colorFond;
     position: absolute;
     height: 0;
@@ -18,8 +18,8 @@
 
         &---active {
             opacity: 1;
-            transition: all 0.5s;
-            transition-delay: 1.2s;
+            transition: all 0.4s;
+            transition-delay: 0.1s;
         }
 
         &__nav {
@@ -59,14 +59,23 @@
         border-bottom: 0;
         width: 102px;
         height: 100%;
+        transition: width 1s;
 
         &---active {
             width: 798px;
             padding-left: 150px;
         }
 
-        &__content__nav {
-            display: none;
+        &__content {
+
+            &---active {
+                transition: all 1s;
+                transition-delay: 0.7s;
+            }
+
+            &__nav {
+                display: none;
+            }
         }
     }
 

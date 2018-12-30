@@ -54,7 +54,8 @@ a {
     // }
 }
 
-strong {
+strong,
+b {
     @extend %merryweather-bold;
 }
 

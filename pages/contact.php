@@ -40,8 +40,8 @@
 
                 <article class="coordonnes-bloc titre-border_content">
                     <h2 class="titre-border">Mes coordonnées</h2>
-                    <p>Mail : brioudes.guillaume@outlook.fr</p>
-                    <p>Tel : 06 75 91 35 42</p>
+                    <p><b>Mail :</b> <a href="mailto:brioudes.guillaume@outlook.fr">brioudes.guillaume@outlook.fr</a></p>
+                    <p><b>Tel :</b> <a href="tel:+33675913542">06 75 91 35 42</a></p>
                 </article>
 
                 <article class="main__page__num-page">

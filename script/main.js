@@ -14,6 +14,7 @@ boutonBurger.addEventListener('click', function () {
 
     sectionVolet.classList.toggle('volet---active');
     voletContent.classList.toggle('volet__content---active');
+    boutonBurger.classList.toggle('header__raccourcis-nav__menu-burger--rotated');
 });
 
 

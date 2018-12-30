@@ -40,7 +40,8 @@ em, .bouton-volet-content p {
   font-style: italic;
 }
 
-h3, strong {
+h3, strong,
+b {
   font-family: 'Merriweather';
   font-weight: bold;
   font-style: normal;
@@ -85,7 +86,7 @@ h1 {
           filter: sepia(0);
 }
 
-.bloc-projet--image, .bouton-volet-animation, .volet {
+.bloc-projet--image, .bouton-volet-animation {
   -webkit-transition: all 1.2s;
   transition: all 1.2s;
 }
@@ -168,6 +169,9 @@ body {
 .titre-border_content {
   position: relative;
   padding: 50px 15px 10px 15px;
+  max-width: 500px;
+  border: 2px #1b1b1b solid;
+  margin: 40px 0 10px 0;
 }
 
 .titre-border_content h3 {
@@ -620,9 +624,10 @@ form textarea::placeholder {
 }
 
 .header__raccourcis-nav__menu-burger {
-  width: 90px;
-  height: 90px;
+  width: 50px;
+  height: 50px;
   position: relative;
+  margin-top: 20px;
   z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -656,7 +661,7 @@ form textarea::placeholder {
 }
 
 .header__raccourcis-nav-top {
-  height: 100px;
+  height: 80px;
 }
 
 .header__nav-roulante {
@@ -672,8 +677,8 @@ form textarea::placeholder {
           transform: rotate(270deg);
   -webkit-transform: rotate(vertical-flipdeg);
           transform: rotate(vertical-flipdeg);
-  -webkit-transition: font-size 1.2s;
-  transition: font-size 1.2s;
+  -webkit-transition: font-size 0.25s;
+  transition: font-size 0.25s;
   display: inline-block;
   margin: 40px 0;
   width: 50px;
@@ -684,6 +689,42 @@ form textarea::placeholder {
 @media (min-width: 800px) {
   .header {
     border-bottom: 0;
+  }
+  .header__raccourcis-nav__menu-burger {
+    width: 90px;
+    height: 90px;
+    left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+  .header__raccourcis-nav__menu-burger--barre---min {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    width: 42px;
+  }
+  .header__raccourcis-nav__menu-burger--barre---max {
+    display: none;
+  }
+  .header__raccourcis-nav__menu-burger--barre---moy {
+    width: 42px;
+    top: 37px;
+    position: absolute;
+  }
+  .header__raccourcis-nav__menu-burger--rotated {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   .header__nav-roulante {
     width: 50px;
@@ -729,6 +770,8 @@ form textarea::placeholder {
 
 .volet {
   border-bottom: 2px #1b1b1b solid;
+  -webkit-transition: height 0.4s;
+  transition: height 0.4s;
   background-color: #e2decf;
   position: absolute;
   height: 0;
@@ -748,10 +791,10 @@ form textarea::placeholder {
 
 .volet__content---active {
   opacity: 1;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-transition-delay: 1.2s;
-          transition-delay: 1.2s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 
 .volet__content__nav {
@@ -794,10 +837,18 @@ form textarea::placeholder {
     border-bottom: 0;
     width: 102px;
     height: 100%;
+    -webkit-transition: width 1s;
+    transition: width 1s;
   }
   .volet---active {
     width: 798px;
     padding-left: 150px;
+  }
+  .volet__content---active {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    -webkit-transition-delay: 0.7s;
+            transition-delay: 0.7s;
   }
   .volet__content__nav {
     display: none;
@@ -963,11 +1014,6 @@ form textarea::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.bloc-projet {
-  border: 2px #1b1b1b solid;
-  margin: 40px 0 10px 0;
 }
 
 .bloc-projet--image {
