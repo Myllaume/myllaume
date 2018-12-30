@@ -67,7 +67,7 @@ if(isset($_POST) && !empty($_POST)) {
     else
     {
         echo '<div class="error-form-content">';
-        echo '<p class="error-form-message">Une erreur est survenue lors de l\'envoi du formulaire par email</p>';
+        echo '<p class="error-form-message">Une erreur est survenue lors de l\'envoi du formulaire</p>';
         echo '</div>';
     }
 }

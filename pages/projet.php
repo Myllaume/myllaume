@@ -13,7 +13,7 @@
     <div class="wrapper" id="wrapper">
         <?php include("../include/header.php") ?>
         <main class="main row">
-            <section class="main__page col-page">
+            <section class="main__page col-page" id="projet-web-content">
                 <h1 class="main__page--titre-page">Mes projets</h1>
 
                 <p class="main__page--intro">Voici la liste des projets que j'ai réalisé personnelement et aussi dans le cadre de mes études.</p>
@@ -29,80 +29,7 @@
                     </a>
                 </div>
 
-                <article class="bloc-projet titre-border_content">
-                    <h3 class="titre-border">Site responsive</h3>
-                    <div class="bloc-projet__description row">
-                        <img src="../src/images/projet_vacarmes.png" alt="" class="bloc-projet--image">
-                        <h4>Vacarmes</h4>
-                        <p>Développement pour les étudiants en journalisme de Strasbourg (CUEJ) d'un site de présentation pour leur enquête sur les armes à feu.</p>
-                        <a href="http://cuej.info/mini-sites/armes/" target="_blank" class="bouton-little">
-                            <div class="bouton-volet-content">
-                                <p>Voir le site</p>
-                                <div class="bouton-volet-animation"></div>
-                            </div>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="bloc-projet titre-border_content">
-                    <h3 class="titre-border">Maquette responsive</h3>
-                    <div class="bloc-projet__description row">
-                        <img src="../src/images/projet_index.png" alt="" class="bloc-projet--image">
-                        <h4>Index, hypertexte</h4>
-                        <p>Maquette responsive pour un projet de blog en cours de développement et au sujet de l'hypertexte.</p>
-                        <a href="../src/docs/maquette_index.pdf" target="_blank" class="bouton-little">
-                            <div class="bouton-volet-content">
-                                <p>Voir la maquette</p>
-                                <div class="bouton-volet-animation"></div>
-                            </div>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="bloc-projet titre-border_content">
-                    <h3 class="titre-border">Site responsive</h3>
-                    <div class="bloc-projet__description row">
-                        <img src="../src/images/projet_schprochrenner.png" alt="" class="bloc-projet--image">
-                        <h4>Sprochrenner</h4>
-                        <p>Création avec une de mes camarades de promo d'un site responsive pour l'évenement éponyme.</p>
-                        <a href="https://myllaume.github.io/sprochrenner/" target="_blank" class="bouton-little">
-                            <div class="bouton-volet-content">
-                                <p>Voir le site</p>
-                                <div class="bouton-volet-animation"></div>
-                            </div>
-                        </a>
-                        <a href="https://github.com/Myllaume/sprochrenner" target="_blank" class="bouton-little">
-                            <div class="bouton-volet-content">
-                                <p>Voir le code</p>
-                                <div class="bouton-volet-animation"></div>
-                            </div>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="bloc-projet titre-border_content">
-                    <h3 class="titre-border">Site responsive</h3>
-                    <div class="bloc-projet__description row">
-                        <img src="../src/images/projet_myllaume_v2.png" alt="" class="bloc-projet--image">
-                        <h4>Myllaume, v2</h4>
-                        <p>Première version de mon site web sous forme d'un cv en ligne complété par un blog.</p>
-                        <a href="https://github.com/Myllaume/myllaume" target="_blank" class="bouton-little">
-                            <div class="bouton-volet-content">
-                                <p>Voir le code</p>
-                                <div class="bouton-volet-animation"></div>
-                            </div>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="bloc-projet titre-border_content">
-                    <h3 class="titre-border">Site</h3>
-                    <div class="bloc-projet__description row">
-                        <img src="../src/images/projet_myllaume_v1.png" alt="" class="bloc-projet--image">
-                        <h4>Myllaume, v1</h4>
-                        <p>Première version de mon site web sous forme d'un cv en ligne complété par un blog.</p>
-                    </div>
-                </article>
+                <!-- injections JSON -->
 
                 <article class="main__page__num-page">
                     <p>7</p>
@@ -139,6 +66,7 @@
         </main>
     </div>
     <script src="../script/main.js"></script>
+    <script src="../script/projets.js"></script>
 </body>
 
 </html>

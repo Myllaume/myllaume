@@ -52,6 +52,7 @@
         </main>
     </div>
     <script src="../script/main.js"></script>
+    <script src="../script/form.js"></script>
 </body>
 
 </html>
