@@ -1,14 +1,3 @@
-h1,
-h2,
-h3,
-h4,
-p,
-a {
-    @extend %merryweather-light;
-    margin: 0;
-    cursor: default;
-}
-
 // -- TITRES
 
 h1 {
@@ -29,11 +18,11 @@ h2 {
 }
 
 h3 {
-    @extend %merryweather-regular;
-    font-size: 19px;
+    @extend %merryweather-bold;
+    font-size: 22px;
     padding: 4px;
-    letter-spacing: 0.01em;
-    margin-left: 20px;
+    letter-spacing: 0.03em;
+    margin: 20px 0 0 0;
 }
 
 h4 {
@@ -47,8 +36,9 @@ h4 {
 }
 
 p {
-    font-size: 15px;
-    line-height: 22px;
+    @extend %merryweather-light;
+    font-size: 18px;
+    line-height: 25px;
     letter-spacing: 0.02em;
     margin: 10px 0;
     max-width: 400px;
@@ -59,9 +49,17 @@ a {
     color: $colorGray;
     cursor: pointer;
 
-    p {
-        cursor: pointer;
-    }
+    // p {
+    //     cursor: pointer;
+    // }
+}
+
+strong {
+    @extend %merryweather-bold;
+}
+
+em {
+    @extend %merryweather-italic;
 }
 
 // -- SPECIAL
@@ -72,7 +70,7 @@ a {
 }
 
 .text-big {
-    font-size: 22px;
+    font-size: 28px;
 }
 
 h2.titre-border {
@@ -87,11 +85,6 @@ h3.titre-border {
     @extend h2.titre-border;
     top: -25px;
     display: inline-block;
-}
-
-.titre-border_content {
-    position: relative;
-    padding: 30px 0 10px 0;
 }
 
 .date {

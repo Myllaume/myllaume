@@ -30,12 +30,10 @@
 
                 <article class="main__page__competence titre-border_content">
                     <h2 class="titre-border">Compétences</h2>
-                    <p class="main__page__competence--item">Développer le visuel d'un site</p>
-                    <p class="main__page__competence--item">Dynamiser un site</p>
-                    <p class="main__page__competence--item">Rédiger des articles</p>
-                    <p class="main__page__competence--item">Administrer Wordpress</p>
-                    <p class="main__page__competence--item">Dessiner un site</p>
-                    <p class="main__page__competence--item">Référencer un site</p>
+                    <p class="main__page__competence--item">Design de site responsive</p>
+                    <p class="main__page__competence--item">Intégration responsive</p>
+                    <p class="main__page__competence--item">Intégration automatique depuis une base de données</p>
+                    <p class="main__page__competence--item">Installation et administration Wordpress</p>
                 </article>
 
                 <article class="main__page__num-page">
@@ -47,21 +45,21 @@
 
             <section class="main__page col-page">
 
-                <article class="main__page__experiences titre-border_content">
+                <article class="main__page__experiences carnet-box titre-border_content">
                     <h2 class="titre-border">Expériences</h2>
 
                     <h3>Études</h3>
                     <div class="main__page__experiences__content">
                         <div class="main__page__experiences__content__activite">
-                            <div class="case-a-cocher"></div>
+                            <!-- <div class="case-a-cocher"></div> -->
                             <p>DUT Métiers du Multimédia et l'Internet</p>
                             <p class="date">2017-2019</p>
                         </div>
                         <div class="main__page__experiences__content__activite">
-                            <div class="case-coche">
+                            <!-- <div class="case-coche">
                                 <div class="case-coche--branche-petite"></div>
                                 <div class="case-coche--branche-grande"></div>
-                            </div>
+                            </div> -->
                             <p>Baccalauréat Littéraire spécialité cinéma</p>
                             <p class="date">2016-2017</p>
                         </div>

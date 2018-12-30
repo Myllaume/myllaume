@@ -1,14 +1,8 @@
-h1,
-h2,
-h3,
-h4,
-p,
-a, form textarea {
+p, form textarea {
   font-family: 'Merriweather';
   font-weight: 300;
   font-style: normal;
 }
-
 
 a, .date, .annonce-prochainement, form input, form textarea::-webkit-input-placeholder {
   font-family: 'Merriweather';
@@ -16,13 +10,11 @@ a, .date, .annonce-prochainement, form input, form textarea::-webkit-input-place
   font-style: italic;
 }
 
-
 a, .date, .annonce-prochainement, form input, form textarea:-ms-input-placeholder {
   font-family: 'Merriweather';
   font-weight: 300;
   font-style: italic;
 }
-
 
 a, .date, .annonce-prochainement, form input, form textarea::-ms-input-placeholder {
   font-family: 'Merriweather';
@@ -30,19 +22,27 @@ a, .date, .annonce-prochainement, form input, form textarea::-ms-input-placehold
   font-style: italic;
 }
 
-
 a, .date, .annonce-prochainement, form input, form textarea::placeholder {
   font-family: 'Merriweather';
   font-weight: 300;
   font-style: italic;
 }
 
-
-h2,
-h3,
-h4 {
+h2, h4 {
   font-family: 'Merriweather';
   font-weight: normal;
+  font-style: normal;
+}
+
+em, .bouton-volet-content p {
+  font-family: 'Merriweather';
+  font-weight: normal;
+  font-style: italic;
+}
+
+h3, strong {
+  font-family: 'Merriweather';
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -159,6 +159,11 @@ body {
   width: 100%;
 }
 
+.titre-border_content {
+  position: relative;
+  padding: 50px 15px 10px 15px;
+}
+
 @media (min-width: 800px) {
   .wrapper {
     max-width: 800px;
@@ -209,16 +214,6 @@ body {
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-a {
-  margin: 0;
-  cursor: default;
-}
-
 h1 {
   display: inline-block;
   font-size: 37px;
@@ -235,10 +230,10 @@ h2 {
 }
 
 h3 {
-  font-size: 19px;
+  font-size: 22px;
   padding: 4px;
-  letter-spacing: 0.01em;
-  margin-left: 20px;
+  letter-spacing: 0.03em;
+  margin: 20px 0 0 0;
 }
 
 h4 {
@@ -251,8 +246,8 @@ h4 {
 }
 
 p {
-  font-size: 15px;
-  line-height: 22px;
+  font-size: 18px;
+  line-height: 25px;
   letter-spacing: 0.02em;
   margin: 10px 0;
   max-width: 400px;
@@ -263,16 +258,12 @@ a {
   cursor: pointer;
 }
 
-a p {
-  cursor: pointer;
-}
-
 .lettrine::first-letter {
   font-size: 50px;
 }
 
 .text-big {
-  font-size: 22px;
+  font-size: 28px;
 }
 
 h2.titre-border, h3.titre-border {
@@ -286,11 +277,6 @@ h2.titre-border, h3.titre-border {
 h3.titre-border {
   top: -25px;
   display: inline-block;
-}
-
-.titre-border_content {
-  position: relative;
-  padding: 30px 0 10px 0;
 }
 
 .date {
@@ -402,6 +388,7 @@ h3.titre-border {
 }
 
 .bouton-volet-content p {
+  font-size: 20px;
   position: relative;
   z-index: 10;
 }
@@ -428,8 +415,8 @@ h3.titre-border {
 }
 
 .case-coche, .case-a-cocher {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border: 2px #1b1b1b solid;
   position: relative;
   margin: 15px 20px 15px 0;
@@ -512,47 +499,46 @@ form {
 
 form input {
   border: 2px #1b1b1b solid;
-  padding: 2px 10px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin: 5px;
-  font-size: 15px;
+  padding: 7px 10px;
+  margin: 10px 0;
+  font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 form input[type=text],
 form input[type=email] {
   width: 100%;
-  height: 30px;
+  height: 40px;
   background-color: #e2decf;
 }
 
 form input[type=text]::-webkit-input-placeholder,
 form input[type=email]::-webkit-input-placeholder {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
 }
 
 form input[type=text]:-ms-input-placeholder,
 form input[type=email]:-ms-input-placeholder {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
 }
 
 form input[type=text]::-ms-input-placeholder,
 form input[type=email]::-ms-input-placeholder {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
 }
 
 form input[type=text]::placeholder,
 form input[type=email]::placeholder {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
 }
@@ -568,38 +554,37 @@ form input[type=submit] {
 
 form textarea {
   border: 2px #1b1b1b solid;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 5px;
+  margin: 10px 0;
   background-color: #e2decf;
   width: 100%;
-  padding: 2px 10px;
-  font-size: 15px;
+  padding: 7px 10px;
+  font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 form textarea::-webkit-input-placeholder {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
 }
 
 form textarea:-ms-input-placeholder {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
 }
 
 form textarea::-ms-input-placeholder {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
 }
 
 form textarea::placeholder {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
 }
@@ -895,8 +880,6 @@ form textarea::placeholder {
 
 .main__page__competence--item {
   margin-left: 20px;
-  font-size: 18px;
-  line-height: 40px;
 }
 
 .main__page__experiences {
@@ -920,7 +903,9 @@ form textarea::placeholder {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 10px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 800px) {
@@ -986,9 +971,5 @@ form textarea::placeholder {
 
 .bloc-projet__description {
   padding: 10px;
-}
-
-.main__page--intro {
-  margin-bottom: 40px;
 }
 /*# sourceMappingURL=main.css.map */

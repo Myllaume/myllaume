@@ -19,8 +19,8 @@
 
         &--item {
             margin-left: 20px;
-            font-size: 18px;
-            line-height: 40px;
+            // font-size: 18px;
+            // line-height: 40px;
         }
     }
 
@@ -34,7 +34,7 @@
             &__activite {
                 display: flex;
                 justify-content: space-between;
-                margin: 10px 20px;
+                align-items: center;
             }
         }
     }
