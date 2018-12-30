@@ -12,6 +12,42 @@
     font-style: italic;
 }
 
+%merryweather-regular {
+    font-family: 'Merriweather';
+    font-weight: normal;
+    font-style: normal;
+}
+
+%merryweather-italic {
+    font-family: 'Merriweather';
+    font-weight: normal;
+    font-style: italic;
+}
+
+%merryweather-bold {
+    font-family: 'Merriweather';
+    font-weight: bold;
+    font-style: normal;
+}
+
+%merryweather-bold-italic {
+    font-family: 'Merriweather';
+    font-weight: bold;
+    font-style: italic;
+}
+
+%merryweather-black {
+    font-family: 'Merriweather';
+    font-weight: 900;
+    font-style: normal;
+}
+
+%merryweather-black-italic {
+    font-family: 'Merriweather';
+    font-weight: 900;
+    font-style: italic;
+}
+
 // -- Elements
 
 %link-nav {

@@ -12,21 +12,24 @@ a {
 // -- TITRES
 
 h1 {
+    @extend %merryweather-black-italic;
     display: inline-block;
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 37px;
+    margin: 20px 0 50px 0;
     letter-spacing: 0.05em;
 }
 
 h2 {
+    @extend %merryweather-regular;
     display: inline-block;
     padding: 4px;
-    font-size: 24px;
+    font-size: 30px;
     margin: 20px 0;
     letter-spacing: 0.01em;
 }
 
 h3 {
+    @extend %merryweather-regular;
     font-size: 19px;
     padding: 4px;
     letter-spacing: 0.01em;
@@ -34,6 +37,7 @@ h3 {
 }
 
 h4 {
+    @extend %merryweather-regular;
     display: inline-block;
     font-size: 18px;
     padding: 4px;
@@ -47,6 +51,7 @@ p {
     line-height: 22px;
     letter-spacing: 0.02em;
     margin: 10px 0;
+    max-width: 400px;
 }
 
 a {
@@ -62,6 +67,7 @@ a {
 // -- SPECIAL
 
 .lettrine::first-letter {
+    @extend %merryweather-black;
     font-size: 50px;
 }
 

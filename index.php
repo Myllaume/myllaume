@@ -73,7 +73,7 @@
                         apporté de la technique, de la méthode et la connaissance d'autres langages comme le JavaScript
                         et PHP.</p>
                     <p>Ma curiosité fait le reste. Je m'intéresse désormais au développement de projets plus
-                        importants, dans les normes du web. J'aime mettre en place des mécanisme de traitement des
+                        importants, dans les normes du web. J'aime mettre en place des mécanismes de traitement des
                         données, mettre en place une interface pour rendre ces données accessibles aux utilisateurs.</p>
                     <p>L'informatique me donne la possibilité de par le texte de créer ce que je ne sais dessiner,
                         d'afficher de l'information en bonne et due forme à l'internaute.</p>
