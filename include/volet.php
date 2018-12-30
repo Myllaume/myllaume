@@ -7,23 +7,16 @@
 
 <section class="volet__content__colonnes row">
     <article class="volet-colonne volet-projet">
-        <h2>Projets</h2>
+        <h2>En ce moment...</h2>
 
         <article class="bloc-projet titre-border_content">
-            <h3 class="titre-border">Maquette</h3>
-            <div class="bloc-projet__description row">
-                <img src="/src/images/projet_schprochrenner.png" alt="" class="bloc-projet--image">
-                <h4>Sprochrenner</h4>
-                <p>Création avec une de mes camarades de promo d'un site responsive pour l'évenement éponyme.</p>
-                <a href="https://myllaume.github.io/sprochrenner/" target="_blank" class="bouton-little">
+            <h3 class="titre-border">Maquette responsive</h3>
+            <div class="bloc-projet__description row"><img class="bloc-projet--image" alt="" src="../src/images/projet_index.png">
+                <h4>Index, hypertexte</h4>
+                <p>Maquette responsive pour un projet de blog en cours de développement et au sujet de l'hypertexte.</p><a
+                    class="bouton-little" target="_blank" href="../src/docs/maquette_index.pdf">
                     <div class="bouton-volet-content">
-                        <p>Voir le site</p>
-                        <div class="bouton-volet-animation"></div>
-                    </div>
-                </a>
-                <a href="https://github.com/Myllaume/sprochrenner" target="_blank" class="bouton-little">
-                    <div class="bouton-volet-content">
-                        <p>Voir le code</p>
+                        <p>Voir la maquette</p>
                         <div class="bouton-volet-animation"></div>
                     </div>
                 </a>
