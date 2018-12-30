@@ -41,7 +41,7 @@ p {
     line-height: 25px;
     letter-spacing: 0.02em;
     margin: 10px 0;
-    max-width: 400px;
+    max-width: 300px;
 }
 
 a {
@@ -99,4 +99,9 @@ h3.titre-border {
     text-align: center;
     font-size: 25px;
     color: hsl(0, 0%, 60%);
+}
+
+@media (min-width: 500px) {
+
+    p{max-width: 400px;}
 }

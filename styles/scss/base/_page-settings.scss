@@ -44,6 +44,9 @@ body {
 }
 
 .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
 
     &__page {
@@ -94,7 +97,7 @@ body {
 
     .col-page {
         width: 50%;
-        padding: 50px 60px;
+        padding: 20px 60px;
         min-width: 500px;
         flex: 1;
     }
@@ -114,6 +117,7 @@ body {
     }
 
     .main {
+        flex-direction: row;
 
         &--separation {
             width: 1px;
@@ -131,7 +135,7 @@ body {
         flex: 1;
         overflow: auto;
         height: 100%;
-        
+
         &::-webkit-scrollbar {
             width: 0;
         }
