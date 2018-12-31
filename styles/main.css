@@ -742,6 +742,7 @@ form textarea::placeholder {
   .header__raccourcis-nav__menu-burger--barre---moy {
     width: 42px;
     top: 37px;
+    left: 18px;
     position: absolute;
   }
   .header__raccourcis-nav__menu-burger--rotated {
