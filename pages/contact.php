@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact - Myllaume</title>
+    <meta name="description" content="N'hésitez pas à me contacter pour une demande d’information ou une proposition. Je réponds à toute demande sur le développement web." />
+    <link rel="canonical" href="https://myllaume.fr/pages/contact.php" />
+    <title>Contacter Guillaume Brioudes - Myllaume</title>
     <link rel="stylesheet" href="../styles/main.css">
 </head>
 
@@ -16,8 +18,7 @@
             <section class="main__page col-page">
                 <h1 class="main__page--titre-page">Me contacter</h1>
 
-                <p class="texte-form">Avec le formulaire ci-dessous, vous pouvez me contacter pour toute demande,
-                    information.</p>
+                <p>Avec le formulaire ci-dessous, vous pouvez rapidement me contacter pour toute proposition, demande ou information.</p>
 
                 <form action="./contact.php" method="post" id="form-contact" require>
                     <input type="text" name="nom" id="nom" placeholder="Votre nom" require>
@@ -43,6 +44,8 @@
                     <p><b>Mail :</b> <a href="mailto:brioudes.guillaume@outlook.fr">brioudes.guillaume@outlook.fr</a></p>
                     <p><b>Tel :</b> <a href="tel:+33675913542">06 75 91 35 42</a></p>
                 </article>
+
+                <p><em>Vous ou un(e) de vos contacts recherche un stagiaire en développement web ?</em> Je serais très heureux de discuter avec vous !</p>
 
                 <article class="main__page__num-page">
                     <p>4</p>

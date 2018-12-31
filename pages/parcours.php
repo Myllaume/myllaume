@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Parcours - Myllaume</title>
+    <meta name="description" content="Voici la présentation de mon parcours d’étudiant, d’associatif et des quelques expériences professionnelles que j’ai pu avoir." />
+    <link rel="canonical" href="https://myllaume.fr/pages/parcours.php" />
+    <title>Le parcours de Guillaume Brioudes - Myllaume</title>
     <link rel="stylesheet" href="../styles/main.css">
 </head>
 

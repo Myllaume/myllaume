@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Projet - Myllaume</title>
+    <meta name="description" content="Voici la liste de tous mes projets. Il s’agit de sites web responsives, mais aussi de maquettes et articles." />
+    <link rel="canonical" href="https://myllaume.fr/pages/projet.php" />
+    <title>Liste des projet de Guillaume Brioudes - Myllaume</title>
     <link rel="stylesheet" href="../styles/main.css">
 </head>
 

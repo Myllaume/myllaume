@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Accueil Myllaume</title>
+    <meta name="description" content="Je m'appelle Guillaume Brioudes et suis étudiant et développement et design web. Je créer et intègre des maquettes responsives." />
+    <link rel="canonical" href="https://myllaume.fr/" />
+    <title>Myllaume, site de Guillaume Brioudes</title>
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 
@@ -20,7 +22,7 @@
                     <img src="./src/images/photo-guillaume-brioudes.jpg" alt="" class="main__page__presentation--photo-profil">
                     <p class="main__page__presentation--texte">Passionné par le web et la rédaction j’ai trouvé mon
                         bonheur dans le style du blogging et la
-                        syntaxe du code. Je suis étudiant en programmation et web design.</p>
+                        syntaxe du code. Je suis étudiant en programmation et design web.</p>
                 </article>
 
                 <article class="main__page__competences">
@@ -37,7 +39,7 @@
                         <p class="main__page__competences__domaine--titres">Rédaction web</p>
                         <p class="main__page__competences__domaine--description">Référencement web et storytelling, sur
                             papier ou CMS</p>
-                        <p class="main__page__competences__domaine--description">Rédaction de textes techniques oui
+                        <p class="main__page__competences__domaine--description">Rédaction de textes techniques ou
                             stylisés</p>
                     </div>
                 </article>
@@ -51,15 +53,8 @@
 
             <section class="main__page col-page">
                 <article class="texte-intro-accueil">
-                    <p class="lettrine">Déjà avant d'entamer mes études sur le web je développais de petits sites en
-                        HTML et CSS. Ces mois de développement en DUT Métiers du Multimédia et de l'Internet m'ont
-                        apporté de la technique, de la méthode et la connaissance d'autres langages comme le JavaScript
-                        et PHP.</p>
-                    <p>Ma curiosité fait le reste. Je m'intéresse désormais au développement de projets plus
-                        importants, dans les normes du web. J'aime mettre en place des mécanismes de traitement des
-                        données, mettre en place une interface pour rendre ces données accessibles aux utilisateurs.</p>
-                    <p>L'informatique me donne la possibilité de par le texte de créer ce que je ne sais dessiner,
-                        d'afficher de l'information en bonne et due forme à l'internaute.</p>
+                    <p class="lettrine">Bienvenue sur mon petit bout de web. Ici je crée avec passion du contenu pour les internautes en parallèle de mes études en intégration et design de sites responsives. J’aime le code, la syntaxe, les mots et tout logiquement la <strong>rédaction et le développement web</strong>.</p>
+                    <p>Sur ce site vous pourrez trouver une présentation de mon parcours, de mes études, expériences professionnelles et bénévoles. Vous pourrez aussi découvrir les différents projets personnels ou d’étude que je mène ou qui sont déjà terminés. Je suis actuellement à la recherche de projets et de stages, donc si vous avez des propositions, <a href="/pages/contact.php">n’hésitez pas à me contacter</a> !</p>
                 </article>
 
                 <div class="row">
