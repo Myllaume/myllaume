@@ -3,12 +3,16 @@
     &__presentation {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: stretch;
 
         &--photo-profil {
             @include size(100px);
             @extend %sepia;
             margin-right: 10px;
+        }
+
+        &--texte {
+            margin-top: 0px;
         }
     }
 

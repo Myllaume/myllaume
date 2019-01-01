@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Voici la liste de tous mes projets. Il s’agit de sites web responsives, mais aussi de maquettes et articles." />
     <link rel="canonical" href="https://myllaume.fr/pages/projet.php" />
-    <title>Liste des projet de Guillaume Brioudes - Myllaume</title>
+    <title>Liste des projets de Guillaume Brioudes - Myllaume</title>
     <link rel="stylesheet" href="../styles/main.css">
 </head>
 
@@ -18,7 +18,7 @@
             <section class="main__page col-page" id="projet-web-content">
                 <h1 class="main__page--titre-page">Mes projets</h1>
 
-                <p class="main__page--intro">Voici la liste des projets que j'ai réalisé personnelement et aussi dans le cadre de mes études.</p>
+                <p class="main__page--intro">Voici la liste des projets que j'ai réalisé personnellement ainsi que dans le cadre de mes études.</p>
 
                 <div class="panneau-titre">
                     <h2>Web</h2>
@@ -30,12 +30,12 @@
                         </div>
                     </a>
                 </div>
-
-                <!-- injections JSON -->
-
+                
                 <article class="main__page__num-page">
                     <p>7</p>
                 </article>
+                
+                <!-- injections JSON -->
             </section>
 
             <div class="main--separation"></div>

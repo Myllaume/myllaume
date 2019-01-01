@@ -4,6 +4,7 @@
 
 .coordonnes-bloc {
     @include border('all');
+    margin-bottom: 30px;
 
     p {
         margin: 10px 20px;

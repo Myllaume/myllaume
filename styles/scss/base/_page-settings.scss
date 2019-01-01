@@ -55,12 +55,12 @@ body {
         &__num-page {
             display: none;
             position: absolute;
-            bottom: 60px;
-            right: 30px;
+            bottom: 55px;
+            right: 40px;
 
             p {
-                position: fixed;
                 font-size: 18px;
+                position: fixed;
             }
         }
     }
@@ -68,6 +68,10 @@ body {
 
 .col-page {
     padding: 10px 20px;
+
+    .titre-border_content:last-child {
+        margin-bottom: 30px;
+    }
 }
 
 .image-decorative {
@@ -80,11 +84,24 @@ body {
     padding: 50px 15px 10px 15px;
     max-width: 500px;
     @include border('all');
-    margin: 40px 0 10px 0;
 
     h3 {
         margin: 0;
     }
+}
+
+.titre-border_content + .titre-border_content {
+    // margin quand un box en suit une autre
+    margin-top: 50px;
+}
+
+// margin quand un box est enfant direct de col-page
+.col-page > .titre-border_content {
+    margin-top: 50px;
+}
+
+.main__page--titre-page + .titre-border_content {
+    margin-top: 0px;
 }
 
 @media (min-width: 800px) {

@@ -159,17 +159,21 @@ body {
 .main__page__num-page {
   display: none;
   position: absolute;
-  bottom: 60px;
-  right: 30px;
+  bottom: 55px;
+  right: 40px;
 }
 
 .main__page__num-page p {
-  position: fixed;
   font-size: 18px;
+  position: fixed;
 }
 
 .col-page {
   padding: 10px 20px;
+}
+
+.col-page .titre-border_content:last-child {
+  margin-bottom: 30px;
 }
 
 .image-decorative {
@@ -181,11 +185,22 @@ body {
   padding: 50px 15px 10px 15px;
   max-width: 500px;
   border: 2px #1b1b1b solid;
-  margin: 40px 0 10px 0;
 }
 
 .titre-border_content h3 {
   margin: 0;
+}
+
+.titre-border_content + .titre-border_content {
+  margin-top: 50px;
+}
+
+.col-page > .titre-border_content {
+  margin-top: 50px;
+}
+
+.main__page--titre-page + .titre-border_content {
+  margin-top: 0px;
 }
 
 @media (min-width: 800px) {
@@ -318,6 +333,10 @@ h3.titre-border {
   text-align: center;
   font-size: 25px;
   color: #999999;
+}
+
+h1 + p {
+  margin-top: 0px;
 }
 
 @media (min-width: 500px) {
@@ -896,15 +915,19 @@ form textarea::placeholder {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .main__page__presentation--photo-profil {
   width: 100px;
   height: 100px;
   margin-right: 10px;
+}
+
+.main__page__presentation--texte {
+  margin-top: 0px;
 }
 
 .main__page__competences {
@@ -1008,6 +1031,7 @@ form textarea::placeholder {
 
 .coordonnes-bloc {
   border: 2px #1b1b1b solid;
+  margin-bottom: 30px;
 }
 
 .coordonnes-bloc p {

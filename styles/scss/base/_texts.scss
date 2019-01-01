@@ -1,4 +1,4 @@
-// -- TITRES
+//-- TITRES
 
 h1 {
     @extend %merryweather-black-italic;
@@ -35,6 +35,8 @@ h4 {
     margin-left: 20px;
 }
 
+//-- TEXTES
+
 p {
     @extend %merryweather-light;
     font-size: 18px;
@@ -48,10 +50,6 @@ a {
     @extend %merryweather-light-italic;
     color: $colorGray;
     cursor: pointer;
-
-    // p {
-    //     cursor: pointer;
-    // }
 }
 
 strong,
@@ -63,7 +61,7 @@ em {
     @extend %merryweather-italic;
 }
 
-// -- SPECIAL
+//-- SPECIAUX
 
 .lettrine::first-letter {
     @extend %merryweather-black;
@@ -101,7 +99,14 @@ h3.titre-border {
     color: hsl(0, 0%, 60%);
 }
 
+//-- COLLISIONS
+
+h1 + p {
+    // si un texte suit un titre, voici son margin
+    margin-top: 0px;
+}
+
 @media (min-width: 500px) {
 
-    p{max-width: 400px;}
+    p {max-width: 400px;}
 }
