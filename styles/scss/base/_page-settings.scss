@@ -90,17 +90,17 @@ body {
     }
 }
 
-.titre-border_content + .titre-border_content {
+.titre-border_content+.titre-border_content {
     // margin quand un box en suit une autre
     margin-top: 50px;
 }
 
 // margin quand un box est enfant direct de col-page
-.col-page > .titre-border_content {
+.col-page>.titre-border_content {
     margin-top: 50px;
 }
 
-.main__page--titre-page + .titre-border_content {
+.main__page--titre-page+.titre-border_content {
     margin-top: 0px;
 }
 
@@ -152,10 +152,23 @@ body {
         flex: 1;
         overflow: auto;
         height: 100%;
-
-        &::-webkit-scrollbar {
-            width: 0;
-        }
     }
+}
 
+//-- SCROLLBARS
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: $colorOrangeBright;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $colorGrayBright;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $colorGray;
 }
