@@ -7,7 +7,7 @@
 
 <section class="volet__content__colonnes row">
     <article class="volet-colonne volet-projet">
-        <h2>En ce moment...</h2>
+        <h2 class="volet-colonne__titre">En ce moment...</h2>
 
         <article class="bloc-projet titre-border_content">
             <h3 class="titre-border">Maquette responsive</h3>

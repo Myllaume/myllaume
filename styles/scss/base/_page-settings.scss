@@ -104,6 +104,10 @@ body {
     margin-top: 0px;
 }
 
+.volet-colonne__titre+.titre-border_content {
+    margin-top: 50px;
+}
+
 @media (min-width: 800px) {
 
     .wrapper {
