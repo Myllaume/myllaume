@@ -61,11 +61,21 @@ form {
 }
 
 .error-form-content {
-    margin-top: 30px;
+    margin: 30px 0;
     border : 2px rgb(199, 80, 80) solid;
+
+    p {
+        color: rgb(199, 80, 80);
+        text-align: center;
+    }
 }
 
-.error-form-message {
-    color: rgb(199, 80, 80);
-    text-align: center;
+.valid-form-content {
+    @extend .error-form-content;
+    border : 2px rgb(134, 177, 99) solid;
+
+    p {
+        color: rgb(134, 177, 99);
+        text-align: center;
+    }
 }

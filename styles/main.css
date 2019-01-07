@@ -665,13 +665,22 @@ form textarea::placeholder {
   border: 2px red solid;
 }
 
-.error-form-content {
-  margin-top: 30px;
+.error-form-content, .valid-form-content {
+  margin: 30px 0;
   border: 2px #c75050 solid;
 }
 
-.error-form-message {
+.error-form-content p, .valid-form-content p {
   color: #c75050;
+  text-align: center;
+}
+
+.valid-form-content {
+  border: 2px #86b163 solid;
+}
+
+.valid-form-content p {
+  color: #86b163;
   text-align: center;
 }
 

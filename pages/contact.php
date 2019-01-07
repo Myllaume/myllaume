@@ -19,7 +19,9 @@
                 <h1 class="main__page--titre-page">Me contacter</h1>
 
                 <p>Avec le formulaire ci-dessous, vous pouvez rapidement me contacter pour toute proposition, demande ou information.</p>
-
+                
+                <?php include("../include/mail.php"); ?>
+                
                 <form action="./contact.php" method="post" id="form-contact" require>
                     <input type="text" name="nom" id="nom" placeholder="Votre nom" require>
                     <input type="email" name="mail" id="mail" placeholder="Votre adresse email" require>
@@ -27,8 +29,6 @@
                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message" require></textarea>
                     <input type="submit" value="Contacter">
                 </form>
-
-                <?php include("../include/mail.php"); ?>
 
                 <article class="main__page__num-page">
                     <p>3</p>
