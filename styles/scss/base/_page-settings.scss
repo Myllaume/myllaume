@@ -134,7 +134,9 @@ body {
 
     .wrapper {
         max-width: 1150px;
-        height: 800px;
+        height: 90vh;
+        max-height: 800px;
+        min-height: 750px;
     }
 
     .main {

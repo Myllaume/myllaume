@@ -1,0 +1,3 @@
+ErrorDocument 404 https://myllaume.fr/
+ErrorDocument 403 https://myllaume.fr/
+ErrorDocument 500 https://myllaume.fr/
